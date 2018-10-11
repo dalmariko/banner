@@ -1,10 +1,15 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .banner {
   min-width: 320px;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto; }
 
-.backgrounds, .bakgrounLeft, .backgroundRight {
+.backgrounds, .bakgrounLeft, .backgroundRight, .button, .exitButton, .exitButton button {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -25,7 +30,7 @@
   display: inline-block;
   vertical-align: top; }
 
-.logo, .topLeft, .midleCar, .topRight, .middleRight, .dubleRight {
+.logo, .topLeft, .midleCar, .backgroundRight, .medal, .tire {
   -webkit-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
@@ -36,6 +41,21 @@
   min-height: 120px;
   border: 1px solid;
   width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+a:hover {
+  text-decoration: none;
+  color: #000; }
+
+:active, :hover, :focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline-offset: 0;
+  outline: 0; }
 
 .bakgrounLeft {
   width: 40%; }
@@ -56,20 +76,92 @@
   height: 100%; }
 
 .backgroundRight {
-  width: 60%; }
-
-.topRight {
-  width: 45.2%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
   background-color: #000000; }
 
-.middleRight {
+.infoText {
+  width: 30%; }
+
+.queryText {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  color: #ffffff; }
+  .queryText b {
+    font-size: 16px;
+    text-transform: uppercase; }
+
+.saleText {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  color: #dd8e00; }
+  .saleText p {
+    font-size: 14px; }
+
+.medal {
+  width: 10%;
+  height: 67%; }
+
+.button {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .button button {
+    border: none;
+    -webkit-border-radius: 14px;
+            border-radius: 14px;
+    width: 149px;
+    height: 31px;
+    background-color: #ffa400; }
+  .button b {
+    font-size: 13.5px;
+    color: black; }
+
+.tire {
   -webkit-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
-  background-color: #000000;
   width: 31.9%;
   height: 100%; }
 
-.dubleRight {
-  width: 22.9%;
-  background-color: #000000; }
+.exitButton {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+  .exitButton button {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    width: 17px;
+    height: 17px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: none;
+    font-size: 13px;
+    background-color: #f19a1e;
+    color: black; }

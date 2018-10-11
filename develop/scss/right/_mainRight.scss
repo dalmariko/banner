@@ -8,25 +8,83 @@
 
 .backgroundRight {
   @extend %displeyFlex;
+  justify-content: space-around;
+  align-items: center;
   width: 60%;
-}
-
-.topRight{
   @extend %bg;
-  width:45.2%;
   background-color: #000000;
 }
 
-.middleRight{
+.infoText{
+  width: 30%;
+}
+
+.queryText{
+width: 100%;
+  b{
+    font-size: 16px;
+  text-transform: uppercase;
+}
+  flex-flow: column nowrap;
+  color: #ffffff;
+}
+
+.saleText{
+  p{
+    font-size: 14px;
+  }
+  flex-flow: column nowrap;
+  color: #dd8e00;
+}
+
+.medal{
+  @extend %bg;
+  width: 10%;
+  height: 67%;
+}
+
+.button{
+  @extend %displeyFlex;
+  justify-content: center;
+
+  button{
+    border: none;
+    border-radius: 14px ;
+    width: 149px;
+    height: 31px;
+    background-color: #ffa400;
+  }
+
+  b{
+    font-size: 13.5px;
+    color: black;
+  }
+
+}
+
+.tire{
   @extend %bg;
   background-size: cover;
-  background-color: #000000;
   width: 31.9%;
   height: 100%;
 }
 
-.dubleRight{
-  @extend %bg;
-  width: 22.9%;
-  background-color: #000000;
+.exitButton{
+  @extend %displeyFlex;
+  align-self: flex-start;
+
+  button{
+    @extend %displeyFlex;
+    justify-content: center;
+    align-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: none;
+    font-size: 13px;
+    background-color: #f19a1e;
+    color: black;
+  }
+
 }
+

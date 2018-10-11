@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 %container {
   min-width: 320px;
   max-width: 1920px;
@@ -14,6 +19,9 @@
 %displayInline {
   display: inline-block;
   vertical-align: top;
+}
+%displayBlock{
+  display: block;
 }
 
 %bg {
@@ -34,7 +42,22 @@
 }
 
 
+a {
+  text-decoration: none;
+  color:#000;
+}
 
+a:hover {
+  text-decoration: none;
+  color:#000;
+}
+
+:active, :hover, :focus {
+  outline: none;
+  box-shadow: none;
+  outline-offset: 0;
+  outline: 0;
+}
 
 
 
