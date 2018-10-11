@@ -1,0 +1,32 @@
+@import 'backgroundBlack';
+@import 'textQuery';
+@import 'textLike';
+@import 'medal';
+@import 'buton';
+@import 'backgroundTires';
+@import 'buttonExit';
+
+.backgroundRight {
+  @extend %displeyFlex;
+  width: 60%;
+}
+
+.topRight{
+  @extend %bg;
+  width:45.2%;
+  background-color: #000000;
+}
+
+.middleRight{
+  @extend %bg;
+  background-size: cover;
+  background-color: #000000;
+  width: 31.9%;
+  height: 100%;
+}
+
+.dubleRight{
+  @extend %bg;
+  width: 22.9%;
+  background-color: #000000;
+}

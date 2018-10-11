@@ -1,0 +1,25 @@
+.bakgrounLeft {
+  @extend %displeyFlex;
+  width: 40%;
+}
+
+.logo{
+  @extend %bg;
+  width: 152px;
+  height: 56px;
+}
+
+.topLeft{
+  @extend %displayInline;
+  @extend %bg;
+  background-color: white;
+  width: 46%;
+}
+
+.midleCar{
+  @extend %displayInline;
+  @extend %bg;
+  background-size:cover;
+  width: 54%;
+  height: 100%;
+}
