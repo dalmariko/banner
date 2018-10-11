@@ -1,11 +1,3 @@
-@import 'backgroundBlack';
-@import 'textQuery';
-@import 'textLike';
-@import 'medal';
-@import 'buton';
-@import 'backgroundTires';
-@import 'buttonExit';
-
 .backgroundRight {
   @extend %displeyFlex;
   justify-content: space-around;
@@ -13,14 +5,15 @@
   width: 60%;
   @extend %bg;
   background-color: #000000;
+
 }
 
 .infoText{
   width: 30%;
+  margin-left: 50px;
 }
 
 .queryText{
-width: 100%;
   b{
     font-size: 18px;
   text-transform: uppercase;
@@ -41,9 +34,13 @@ width: 100%;
   @extend %bg;
   width: 10%;
   height: 67%;
+  margin-left: 44px;
+  margin-right: 48px;
 }
 
 .button{
+  width: 20%;
+  margin-right: 0;
   @extend %displeyFlex;
 
   button{
@@ -68,7 +65,18 @@ width: 100%;
   height: 100%;
 }
 
+.empty{
+  width: 50%;
+  margin: 0;
+  @extend %bg;
+  background-size: cover;
+  background-color: black;
+}
+
 .exitButton{
+  width: 3%;
+  margin-top: 10px;
+  margin-right: 10px;
   @extend %displeyFlex;
   align-self: flex-start;
 

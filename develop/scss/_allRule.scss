@@ -2,51 +2,9 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,800');
-
-
-
-
-
-%container {
-  min-width: 320px;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
+body{
+margin: 0;
 }
-
-%displeyFlex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-%displayInline {
-  display: inline-block;
-  vertical-align: top;
-}
-%displayBlock{
-  display: block;
-}
-
-%bg {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.banner {
-  @extend %container;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.backgrounds {
-  @extend %displeyFlex;
-  min-height: 120px;
-  border: 1px solid;
-  width: 100%;
-}
-
 
 a {
   text-decoration: none;
@@ -64,6 +22,45 @@ a:hover {
   outline-offset: 0;
   outline: 0;
 }
+
+%container {
+  min-width: 320px;
+  max-width: 1920px;
+  min-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%displeyFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+%displayInline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+%bg {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  font-family: 'Montserrat', sans-serif;
+  @extend %container;
+}
+
+.backgrounds {
+  @extend %displeyFlex;
+  border: 1px solid;
+  width: 100%;
+}
+
+
 
 
 

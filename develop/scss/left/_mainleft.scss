@@ -1,25 +1,43 @@
 .bakgrounLeft {
   @extend %displeyFlex;
   width: 40%;
+  height: 120px;
+}
+
+
+.topLeft{
+  @extend %bg;
+  background-color: white;
+  background-size:auto;
+  width: 46%;
+  height: 100%;
+}
+
+.carBox{
+  width: 54%;
+  height: 100%;
+  position: relative;
 }
 
 .logo{
   @extend %bg;
-  width: 152px;
-  height: 56px;
+  position: absolute;
+  top: -9px;
+  left: 80px;
+  z-index: 2;
+  background-size:contain;
+  width: 155px;
+  height: 77px;
 }
 
-.topLeft{
-  @extend %displayInline;
-  @extend %bg;
-  background-color: white;
-  width: 46%;
-}
 
 .midleCar{
-  @extend %displayInline;
+  position: absolute;
+  z-index: 0;
+  top:0;
   @extend %bg;
   background-size:cover;
-  width: 54%;
+  width: 486px;
   height: 100%;
+
 }
