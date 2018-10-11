@@ -22,7 +22,7 @@
 .queryText{
 width: 100%;
   b{
-    font-size: 16px;
+    font-size: 18px;
   text-transform: uppercase;
 }
   flex-flow: column nowrap;
@@ -45,7 +45,6 @@ width: 100%;
 
 .button{
   @extend %displeyFlex;
-  justify-content: center;
 
   button{
     border: none;
@@ -76,14 +75,22 @@ width: 100%;
   button{
     @extend %displeyFlex;
     justify-content: center;
-    align-content: center;
+    align-self: center;
+
+    padding: 0 0 2px 0;
     width: 17px;
     height: 17px;
     border-radius: 50%;
     border: none;
-    font-size: 13px;
     background-color: #f19a1e;
+
+    font-size: 13px;
     color: black;
+  }
+
+  button::-moz-focus-inner {
+    padding:0;
+    border:0;
   }
 
 }

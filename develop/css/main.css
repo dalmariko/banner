@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600,800");
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -36,6 +37,9 @@
           background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
+
+.banner {
+  font-family: 'Montserrat', sans-serif; }
 
 .backgrounds {
   min-height: 120px;
@@ -101,7 +105,7 @@ a:hover {
           flex-flow: column nowrap;
   color: #ffffff; }
   .queryText b {
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase; }
 
 .saleText {
@@ -120,22 +124,17 @@ a:hover {
   width: 10%;
   height: 67%; }
 
-.button {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .button button {
-    border: none;
-    -webkit-border-radius: 14px;
-            border-radius: 14px;
-    width: 149px;
-    height: 31px;
-    background-color: #ffa400; }
-  .button b {
-    font-size: 13.5px;
-    color: black; }
+.button button {
+  border: none;
+  -webkit-border-radius: 14px;
+          border-radius: 14px;
+  width: 149px;
+  height: 31px;
+  background-color: #ffa400; }
+
+.button b {
+  font-size: 13.5px;
+  color: black; }
 
 .tire {
   -webkit-background-size: cover;
@@ -154,14 +153,18 @@ a:hover {
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    padding: 0 0 2px 0;
     width: 17px;
     height: 17px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     border: none;
-    font-size: 13px;
     background-color: #f19a1e;
+    font-size: 13px;
     color: black; }
+  .exitButton button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
