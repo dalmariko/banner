@@ -21,7 +21,7 @@ a:hover {
   outline-offset: 0;
   outline: 0; }
 
-.banner {
+.backgrounds {
   min-width: 320px;
   max-width: 1920px;
   min-height: 120px;
@@ -45,62 +45,55 @@ a:hover {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; }
 
-.topLeft, .logo, .midleCar, .backgroundRight, .medal, .tire, .empty {
+.topLeft, .logo, .midleCar, .backgroundRight, .medalContainer .medal, .tireContainer .tire {
   -webkit-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat; }
 
 .banner {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px; }
 
 .backgrounds {
-  border: 1px solid;
-  width: 100%; }
+  border: 1px solid; }
 
 .bakgrounLeft {
-  width: 40%;
-  height: 120px; }
+  width: 40%; }
 
 .topLeft {
   background-color: white;
   -webkit-background-size: auto auto;
        -o-background-size: auto;
           background-size: auto;
-  width: 46%;
+  width: 50%;
   height: 100%; }
 
-.carBox {
-  width: 54%;
-  height: 100%;
-  position: relative; }
-
 .logo {
-  position: absolute;
-  top: -9px;
-  left: 80px;
-  z-index: 2;
+  position: relative;
+  top: -30px;
+  left: 30px;
+  bottom: 0;
   -webkit-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
-  width: 155px;
-  height: 77px; }
+  width: 40%;
+  height: 100%; }
 
 .midleCar {
-  position: absolute;
-  z-index: 0;
-  top: 0;
   -webkit-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
-  width: 486px;
+  width: 50%;
   height: 100%; }
 
 .backgroundRight {
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
@@ -110,43 +103,32 @@ a:hover {
   background-color: #000000; }
 
 .infoText {
-  width: 30%;
+  width: 47%;
   margin-left: 50px; }
+  .infoText .queryText {
+    width: 100%;
+    color: #ffffff; }
+    .infoText .queryText b {
+      font-size: 1.1rem;
+      text-transform: uppercase; }
+  .infoText .saleText {
+    width: 100%;
+    color: #dd8e00; }
+    .infoText .saleText p {
+      font-size: 1rem; }
 
-.queryText {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column nowrap;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  color: #ffffff; }
-  .queryText b {
-    font-size: 18px;
-    text-transform: uppercase; }
-
-.saleText {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column nowrap;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  color: #dd8e00; }
-  .saleText p {
-    font-size: 14px; }
-
-.medal {
-  width: 10%;
-  height: 67%;
+.medalContainer {
+  width: 20%;
+  height: 72%;
   margin-left: 44px;
   margin-right: 48px; }
+  .medalContainer .medal {
+    width: 100%;
+    height: 100%; }
 
 .button {
-  width: 20%;
-  margin-right: 0; }
+  width: 30%;
+  margin-right: 20px; }
   .button button {
     border: none;
     -webkit-border-radius: 14px;
@@ -158,20 +140,18 @@ a:hover {
     font-size: 13.5px;
     color: black; }
 
-.tire {
-  -webkit-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-  width: 31.9%;
+.tireContainer {
+  width: 30%;
   height: 100%; }
+  .tireContainer .tire {
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    width: 100%;
+    height: 100%; }
 
 .empty {
-  width: 50%;
-  margin: 0;
-  -webkit-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-  background-color: black; }
+  width: 67%; }
 
 .exitButton {
   width: 3%;

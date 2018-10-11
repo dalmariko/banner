@@ -1,7 +1,6 @@
 .bakgrounLeft {
   @extend %displeyFlex;
   width: 40%;
-  height: 120px;
 }
 
 
@@ -9,35 +8,28 @@
   @extend %bg;
   background-color: white;
   background-size:auto;
-  width: 46%;
+  width: 50%;
   height: 100%;
 }
 
-.carBox{
-  width: 54%;
-  height: 100%;
-  position: relative;
-}
+
 
 .logo{
+  position: relative;
+  top:-30px;
+  left:30px;
+  bottom: 0;
   @extend %bg;
-  position: absolute;
-  top: -9px;
-  left: 80px;
-  z-index: 2;
   background-size:contain;
-  width: 155px;
-  height: 77px;
+  width: 40%;
+  height: 100%;
 }
 
 
 .midleCar{
-  position: absolute;
-  z-index: 0;
-  top:0;
   @extend %bg;
   background-size:cover;
-  width: 486px;
+  width: 50%;
   height: 100%;
 
 }

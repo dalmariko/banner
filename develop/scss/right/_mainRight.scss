@@ -1,6 +1,6 @@
 .backgroundRight {
   @extend %displeyFlex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 60%;
   @extend %bg;
@@ -9,38 +9,43 @@
 }
 
 .infoText{
-  width: 30%;
+  width: 47%;
   margin-left: 50px;
-}
 
-.queryText{
-  b{
-    font-size: 18px;
-  text-transform: uppercase;
-}
-  flex-flow: column nowrap;
-  color: #ffffff;
-}
-
-.saleText{
-  p{
-    font-size: 14px;
+  .queryText{
+    width: 100%;
+    b{
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+    color: #ffffff;
   }
-  flex-flow: column nowrap;
-  color: #dd8e00;
+
+  .saleText{
+    width: 100%;
+    p{
+      font-size: 1rem;
+    }
+    color: #dd8e00;
+  }
 }
 
-.medal{
-  @extend %bg;
-  width: 10%;
-  height: 67%;
+.medalContainer{
+  width: 20%;
+  height: 72%;
   margin-left: 44px;
   margin-right: 48px;
+
+  .medal{
+    @extend %bg;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .button{
-  width: 20%;
-  margin-right: 0;
+  width: 30%;
+  margin-right: 20px;
   @extend %displeyFlex;
 
   button{
@@ -58,19 +63,22 @@
 
 }
 
-.tire{
-  @extend %bg;
-  background-size: cover;
-  width: 31.9%;
+.tireContainer{
+  width: 30%;
   height: 100%;
+
+  .tire{
+    @extend %bg;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
+
+
 .empty{
-  width: 50%;
-  margin: 0;
-  @extend %bg;
-  background-size: cover;
-  background-color: black;
+  width: 67%;
 }
 
 .exitButton{
