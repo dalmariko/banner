@@ -1,10 +1,13 @@
-@import 'normalize';
-@import 'backgroundCar';
-@import 'log';
-@import 'backgroundBlack';
-@import 'textQuery';
-@import 'textLike';
-@import 'medal';
-@import 'buton';
-@import 'backgroundTires';
+//@import 'normalize';
+@import 'allRule';
+//@import 'backgroundWhite';
+//@import 'backgroundCar';
+@import 'left/log';
+//@import 'backgroundBlack';
+@import 'right/textQuery';
+@import 'right/textLike';
+@import 'right/medal';
+@import 'right/buton';
+@import 'right/backgroundTires';
+@import 'right/buttonExit';
 
