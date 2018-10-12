@@ -91,20 +91,140 @@ a:hover {
           justify-content: flex-end; }
   .logoContainer .topLeft {
     background-color: white;
-    width: auto; }
+    width: 40%; }
+    @media screen and (max-width: 1815px) {
+      .logoContainer .topLeft {
+        width: 30%; } }
+    @media screen and (max-width: 1715px) {
+      .logoContainer .topLeft {
+        width: 25%; } }
+    @media screen and (max-width: 1615px) {
+      .logoContainer .topLeft {
+        width: 20%; } }
+    @media screen and (max-width: 1281px) {
+      .logoContainer .topLeft {
+        width: 15%; } }
+    @media screen and (max-width: 1025px) {
+      .logoContainer .topLeft {
+        width: 5%; } }
+    @media screen and (max-width: 993px) {
+      .logoContainer .topLeft {
+        width: 0px; } }
+    @media screen and (max-width: 769px) {
+      .logoContainer .topLeft {
+        width: 0px; } }
+    @media screen and (max-width: 481px) {
+      .logoContainer .topLeft {
+        width: 0px; } }
+    @media screen and (max-width: 320px) {
+      .logoContainer .topLeft {
+        width: 0px; } }
   .logoContainer .logo {
     background-image: url("../logo.png");
-    width: 20%;
+    width: 40%;
     position: absolute;
-    padding-top: 40px;
-    left: 145px; }
+    padding-top: 57px;
+    left: 300px; }
+    @media screen and (max-width: 1715px) {
+      .logoContainer .logo {
+        width: 75%;
+        left: 270px; } }
+    @media screen and (max-width: 1615px) {
+      .logoContainer .logo {
+        width: 80%;
+        left: 200px; } }
+    @media screen and (max-width: 1281px) {
+      .logoContainer .logo {
+        width: 40%;
+        left: 130px; } }
+    @media screen and (max-width: 1025px) {
+      .logoContainer .logo {
+        width: 40%;
+        left: 100px; } }
+    @media screen and (max-width: 993px) {
+      .logoContainer .logo {
+        width: 40%;
+        left: 90px; } }
+    @media screen and (max-width: 769px) {
+      .logoContainer .logo {
+        width: 50%;
+        left: 85px;
+        padding-top: 43px; } }
+    @media screen and (max-width: 481px) {
+      .logoContainer .logo {
+        width: 55%;
+        left: 55px;
+        padding-top: 30px; } }
+    @media screen and (max-width: 320px) {
+      .logoContainer .logo {
+        width: 55%;
+        left: 55px;
+        padding-top: 30px; } }
   .logoContainer .midleCar {
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
     background-image: url("../car.png");
-    width: 100%; }
+    width: 60%; }
+    @media screen and (max-width: 1815px) {
+      .logoContainer .midleCar {
+        width: 70%; } }
+    @media screen and (max-width: 1715px) {
+      .logoContainer .midleCar {
+        width: 75%; } }
+    @media screen and (max-width: 1615px) {
+      .logoContainer .midleCar {
+        width: 80%; } }
+    @media screen and (max-width: 1281px) {
+      .logoContainer .midleCar {
+        width: 85%; } }
+    @media screen and (max-width: 1025px) {
+      .logoContainer .midleCar {
+        width: 95%; } }
+    @media screen and (max-width: 993px) {
+      .logoContainer .midleCar {
+        width: 100%; } }
+    @media screen and (max-width: 769px) {
+      .logoContainer .midleCar {
+        width: 100%; } }
+    @media screen and (max-width: 481px) {
+      .logoContainer .midleCar {
+        width: 100%;
+        background-image: url("../car2.png"); } }
+    @media screen and (max-width: 320px) {
+      .logoContainer .midleCar {
+        width: 100%;
+        background-image: url("../car2.png"); } }
 
+/*
+width: 40%;
+@include mQ(1815px){
+  width:30%;
+}
+@include mQ(1715px){
+  width:25%;
+}
+@include mQ(1615px){
+  width:20%;
+}
+@include mQ(1281px){
+  width:15%;
+}
+@include mQ(1025px){
+  width:5%;
+}
+@include mQ(993px){
+  width:0px;
+}
+@include mQ(769px) {
+  width: 0px;
+}
+@include mQ(481px){
+  width:0px;
+}
+@include mQ(320px){
+  width:0px;
+}*/
 .backgroundRight {
   -webkit-box-pack: center;
   -webkit-justify-content: center;

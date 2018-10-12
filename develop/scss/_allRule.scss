@@ -57,6 +57,14 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+@mixin mQ($arg){
+  @media screen and (max-width: $arg){
+      @content;
+  }
+}
+
+
+
 .banner {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;

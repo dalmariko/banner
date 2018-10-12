@@ -16,26 +16,144 @@
   .topLeft{
     @extend %bg;
     background-color: white;
-    width: auto;
+    width: 40%;
+    @include mQ(1815px){
+      width:30%;
+    }
+    @include mQ(1715px){
+      width:25%;
+    }
+    @include mQ(1615px){
+      width:20%;
+    }
+    @include mQ(1281px){
+      width:15%;
+    }
+    @include mQ(1025px){
+      width:5%;
+    }
+    @include mQ(993px){
+      width:0px;
+    }
+    @include mQ(769px) {
+      width: 0px;
+    }
+    @include mQ(481px){
+      width:0px;
+    }
+    @include mQ(320px){
+      width:0px;
+    }
   }
 
   .logo{
     @extend %bg;
     background-image: url("../logo.png");
-    width: 20%;
+    width: 40%;
     position: absolute;
-    padding-top: 40px;
-    left: 145px;
+    padding-top: 57px;
+    left: 300px;
+    @include mQ(1715px){
+      width:75%;
+      left: 270px;
+    }
+    @include mQ(1615px){
+      width:80%;
+      left: 200px;
+    }
+    @include mQ(1281px){
+      width:40%;
+      left: 130px;
+    }
+    @include mQ(1025px){
+      width:40%;
+      left: 100px;
+    }
+    @include mQ(993px){
+      width: 40%;
+      left: 90px;
+    }
+    @include mQ(769px) {
+      width: 50%;
+      left: 85px;
+      padding-top: 43px;
+    }
+    @include mQ(481px){
+      width: 55%;
+      left: 55px;
+      padding-top: 30px;
+    }
+    @include mQ(320px){
+      width: 55%;
+      left: 55px;
+      padding-top: 30px;
+    }
   }
 
   .midleCar{
     @extend %bg;
     background-size: cover;
     background-image: url("../car.png");
-    width: 100%;
+    width: 60%;
+    @include mQ(1815px){
+      width:70%;
+    }
+    @include mQ(1715px){
+      width:75%;
+    }
+    @include mQ(1615px){
+      width:80%;
+    }
+    @include mQ(1281px){
+      width:85%;
+    }
+    @include mQ(1025px){
+      width:95%;
+    }
+    @include mQ(993px){
+      width:100%;
+    }
+    @include mQ(769px){
+      width:100%;
+    }
+    @include mQ(481px){
+      width: 100%;
+      background-image: url("../car2.png");
+    }
+    @include mQ(320px){
+      width: 100%;
+      background-image: url("../car2.png");
+    }
   }
 }
 
-
-
+/*
+width: 40%;
+@include mQ(1815px){
+  width:30%;
+}
+@include mQ(1715px){
+  width:25%;
+}
+@include mQ(1615px){
+  width:20%;
+}
+@include mQ(1281px){
+  width:15%;
+}
+@include mQ(1025px){
+  width:5%;
+}
+@include mQ(993px){
+  width:0px;
+}
+@include mQ(769px) {
+  width: 0px;
+}
+@include mQ(481px){
+  width:0px;
+}
+@include mQ(320px){
+  width:0px;
+}*/
 
