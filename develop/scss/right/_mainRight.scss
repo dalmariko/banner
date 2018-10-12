@@ -32,15 +32,16 @@
 
     .infoContainer {
 
-      width: 100%;
-
       .queryText {
+        width: 100%;
         b {
           text-transform: uppercase;
         }
         color: #ffffff;
       }
       .saleText {
+        width: 80%;
+        font-size: .65rem;
         color: #dd8e00;
       }
     }
@@ -58,6 +59,7 @@
 
     .buttonContainer {
 
+      width: 64%;
       button {
         border-radius: 1rem;
         background-color: #ffa400;

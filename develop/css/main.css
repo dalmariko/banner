@@ -461,27 +461,30 @@ a:hover {
       font-size: .8rem; }
       .flexInfo .buttonContainer {
         height: 1rem; }
-      .flexInfo .infoContainer {
-        width: 100%; }
-        .flexInfo .infoContainer .queryText {
-          color: #ffffff; }
-          .flexInfo .infoContainer .queryText b {
-            text-transform: uppercase; }
-        .flexInfo .infoContainer .saleText {
-          color: #dd8e00; }
+      .flexInfo .infoContainer .queryText {
+        width: 100%;
+        color: #ffffff; }
+        .flexInfo .infoContainer .queryText b {
+          text-transform: uppercase; }
+      .flexInfo .infoContainer .saleText {
+        width: 80%;
+        font-size: .65rem;
+        color: #dd8e00; }
       .flexInfo .medalContainer {
         width: 20%;
         height: 72%; }
         .flexInfo .medalContainer .medal {
           width: 100%;
           height: 100%; }
-      .flexInfo .buttonContainer button {
-        -webkit-border-radius: 1rem;
-                border-radius: 1rem;
-        background-color: #ffa400; }
-        .flexInfo .buttonContainer button b {
-          font-size: 0.6rem;
-          color: black; } }
+      .flexInfo .buttonContainer {
+        width: 64%; }
+        .flexInfo .buttonContainer button {
+          -webkit-border-radius: 1rem;
+                  border-radius: 1rem;
+          background-color: #ffa400; }
+          .flexInfo .buttonContainer button b {
+            font-size: 0.6rem;
+            color: black; } }
 
 .tireContainer {
   width: 30%;
