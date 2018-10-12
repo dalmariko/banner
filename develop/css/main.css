@@ -359,7 +359,7 @@ a:hover {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; }
 
-.topLeft, .logo, .midleCar, .backgroundRight, .medal, .tireContainer .tire {
+.topLeft, .midleCar .logo, .midleCar, .backgroundRight, .medal, .tireContainer .tire {
   -webkit-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
@@ -374,6 +374,11 @@ a:hover {
   border: 1px solid; }
 
 .bakgrounLeft {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 40%; }
 
 .topLeft {
@@ -381,33 +386,7 @@ a:hover {
   -webkit-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
-  width: 50%;
-  height: 100%; }
-  @media screen and (min-width: 320px) {
-    .topLeft {
-      width: 0; } }
-  @media screen and (min-width: 768px) {
-    .topLeft {
-      width: 10%; } }
-
-.logo {
-  position: relative;
-  top: -30px;
-  left: 30px;
-  bottom: 0;
-  background-image: url("../logo.png");
-  -webkit-background-size: contain;
-       -o-background-size: contain;
-          background-size: contain;
-  width: 40%;
-  height: 100%; }
-  @media screen and (min-width: 320px) {
-    .logo {
-      top: -42px;
-      width: 70%; } }
-  @media screen and (min-width: 768px) {
-    .logo {
-      top: -54px; } }
+  width: 50%; }
 
 .midleCar {
   background-image: url("../car.png");
@@ -415,15 +394,31 @@ a:hover {
        -o-background-size: cover;
           background-size: cover;
   width: 50%;
-  height: 100%; }
-  @media screen and (min-width: 320px) {
-    .midleCar {
-      width: 100%;
-      background-image: url("../car2.png"); } }
-  @media screen and (min-width: 768px) {
-    .midleCar {
-      width: 90%;
-      background-image: url("../car.png"); } }
+  /*
+  //
+  //@media screen and (min-width: 320px){
+  //  width: 100%;
+  //  background-image: url('../car2.png');
+  //  background-size:contain;
+  //}
+  //
+  //@media screen and (min-width: 768px){
+  //  width: 90%;
+  //  background-image: url('../car.png');
+  //  background-size:contain;
+  //}
+  */ }
+  .midleCar .logo {
+    position: relative;
+    top: -30px;
+    left: 30px;
+    bottom: 0;
+    background-image: url("../logo.png");
+    -webkit-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+    width: 40%;
+    height: 100%; }
 
 .backgroundRight {
   -webkit-box-pack: center;
@@ -458,33 +453,44 @@ a:hover {
          -moz-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
       font-size: .8rem; }
       .flexInfo .buttonContainer {
-        height: 1rem; }
-      .flexInfo .infoContainer .queryText {
-        width: 100%;
-        color: #ffffff; }
-        .flexInfo .infoContainer .queryText b {
-          text-transform: uppercase; }
-      .flexInfo .infoContainer .saleText {
-        width: 80%;
-        font-size: .65rem;
-        color: #dd8e00; }
+        height: 1rem;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+           -moz-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
       .flexInfo .medalContainer {
-        width: 20%;
-        height: 72%; }
-        .flexInfo .medalContainer .medal {
-          width: 100%;
-          height: 100%; }
-      .flexInfo .buttonContainer {
-        width: 64%; }
-        .flexInfo .buttonContainer button {
-          -webkit-border-radius: 1rem;
-                  border-radius: 1rem;
-          background-color: #ffa400; }
-          .flexInfo .buttonContainer button b {
-            font-size: 0.6rem;
-            color: black; } }
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+           -moz-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; } }
+  .flexInfo .infoContainer .queryText {
+    width: 100%;
+    color: #ffffff; }
+    .flexInfo .infoContainer .queryText b {
+      text-transform: uppercase; }
+  .flexInfo .infoContainer .saleText {
+    width: 80%;
+    font-size: .65rem;
+    color: #dd8e00; }
+  .flexInfo .medalContainer .medal {
+    width: 35px;
+    height: 35px; }
+  .flexInfo .buttonContainer {
+    width: 64%; }
+    .flexInfo .buttonContainer button {
+      -webkit-border-radius: 1rem;
+              border-radius: 1rem;
+      background-color: #ffa400; }
+      .flexInfo .buttonContainer button b {
+        font-size: 0.6rem;
+        color: black; }
 
 .tireContainer {
   width: 30%;

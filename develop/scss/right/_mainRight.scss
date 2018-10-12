@@ -25,58 +25,58 @@
   @media screen and (min-width: 320px) {
     align-content: space-around;
     flex-direction: column;
+    flex-wrap: wrap;
     font-size: .8rem;
+
     .buttonContainer {
       height: 1rem;
-    }
-
-    .infoContainer {
-
-      .queryText {
-        width: 100%;
-        b {
-          text-transform: uppercase;
-        }
-        color: #ffffff;
-      }
-      .saleText {
-        width: 80%;
-        font-size: .65rem;
-        color: #dd8e00;
-      }
+      order: 2;
     }
 
     .medalContainer {
-
-      width: 20%;
-      height: 72%;
-
-      .medal {
-        width: 100%;
-        height: 100%;
-      }
+      order: 3;
     }
+  }
 
-    .buttonContainer {
-
-      width: 64%;
-      button {
-        border-radius: 1rem;
-        background-color: #ffa400;
-
-        b {
-          font-size: 0.6rem;
-          color: black;
-        }
+  .infoContainer {
+    .queryText {
+      width: 100%;
+      b {
+        text-transform: uppercase;
       }
+      color: #ffffff;
+    }
+    .saleText {
+      width: 80%;
+      font-size: .65rem;
+      color: #dd8e00;
+    }
+  }
 
+  .medalContainer {
+    .medal {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .buttonContainer {
+    width: 64%;
+    button {
+      border-radius: 1rem;
+      background-color: #ffa400;
+
+      b {
+        font-size: 0.6rem;
+        color: black;
+      }
     }
 
   }
+
 }
 
-
-.medal{
+.medal {
   @extend %bg;
 }
 
