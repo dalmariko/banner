@@ -52,7 +52,7 @@ a:hover {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; }
 
-.logoContainer .topLeft, .logoContainer .logo, .logoContainer .midleCar, .backgroundRight, .medal, .tireContainer .tire {
+.logoContainer .topLeft, .logoContainer .logo, .logoContainer .midleCar, .backgroundRight, .flexInfo .medalContainer .medal, .tireContainer .tire {
   -webkit-background-size: contain;
        -o-background-size: contain;
           background-size: contain;
@@ -226,107 +226,96 @@ width: 40%;
   width:0px;
 }*/
 .backgroundRight {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  background-color: #000000;
+  /*@include mQ(1715px){
+
+  }
+  @include mQ(1615px){
+
+  }
+  @include mQ(1281px){
+
+  }
+  @include mQ(1025px){
+
+  }
+  @include mQ(993px){
+
+  }
+  @include mQ(769px) {
+
+  }
+  @include mQ(481px){
+
+  }
+  @include mQ(320px){
+    justify-content: space-around;
+  }*/ }
+
+.flexInfo {
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
-  background-color: #000000; }
-  @media screen and (min-width: 320px) {
-    .backgroundRight {
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; } }
-
-.flexInfo {
-  width: 70%; }
-  @media screen and (min-width: 320px) {
-    .flexInfo {
-      -webkit-align-content: space-around;
-          -ms-flex-line-pack: distribute;
-              align-content: space-around;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-         -moz-box-orient: vertical;
-         -moz-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      font-size: .8rem; }
-      .flexInfo .buttonContainer {
-        height: 1rem;
-        -webkit-box-ordinal-group: 3;
-        -webkit-order: 2;
-           -moz-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; }
-      .flexInfo .medalContainer {
-        -webkit-box-ordinal-group: 4;
-        -webkit-order: 3;
-           -moz-box-ordinal-group: 4;
-            -ms-flex-order: 3;
-                order: 3; } }
-  .flexInfo .infoContainer .queryText {
-    width: 100%;
-    color: #ffffff; }
-    .flexInfo .infoContainer .queryText b {
-      text-transform: uppercase; }
-  .flexInfo .infoContainer .saleText {
-    width: 80%;
-    font-size: .65rem;
-    color: #dd8e00; }
-  .flexInfo .medalContainer .medal {
-    width: 35px;
-    height: 35px; }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 40%; }
+  .flexInfo .infoContainer {
+    width: 50%; }
+    .flexInfo .infoContainer .queryText {
+      width: 100%;
+      color: #ffffff; }
+      .flexInfo .infoContainer .queryText b {
+        text-transform: uppercase; }
+    .flexInfo .infoContainer .saleText {
+      width: 80%;
+      font-size: .65rem;
+      color: #dd8e00; }
+  .flexInfo .medalContainer {
+    width: 30%; }
+    .flexInfo .medalContainer .medal {
+      width: 100%;
+      padding-top: 70px; }
   .flexInfo .buttonContainer {
-    width: 64%; }
+    width: 10%; }
     .flexInfo .buttonContainer button {
       -webkit-border-radius: 1rem;
               border-radius: 1rem;
-      background-color: #ffa400; }
+      background-color: #ffa400;
+      width: 105px;
+      height: 23px; }
       .flexInfo .buttonContainer button b {
         font-size: 0.6rem;
         color: black; }
 
 .tireContainer {
-  width: 30%;
-  height: 100%; }
-  @media screen and (min-width: 320px) {
-    .tireContainer {
-      width: 0;
-      height: 0; } }
-  @media screen and (min-width: 768px) {
-    .tireContainer {
-      width: 0;
-      height: 0; } }
+  width: 20%; }
   .tireContainer .tire {
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
     width: 100%;
-    height: 100%; }
+    padding-top: 50%; }
+  @media screen and (max-width: 769px) {
+    .tireContainer {
+      display: none; } }
 
 .empty {
-  width: 67%; }
-  @media screen and (min-width: 320px) {
+  width: 7%; }
+  @media screen and (max-width: 769px) {
     .empty {
-      width: 0; } }
-  @media screen and (min-width: 768px) {
-    .empty {
-      width: 0; } }
+      display: none; } }
 
 .exitButton {
-  width: 17px;
-  height: 17px;
+  width: 3%;
   margin-top: .9em;
   margin-right: .9em;
   -webkit-align-self: flex-start;
@@ -341,11 +330,28 @@ width: 40%;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
-    width: 100%;
-    height: 100%;
+    width: 17px;
+    height: 17px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     background-color: #f19a1e;
     padding: 0 0 17px 0;
     font-size: 14px;
     color: black; }
+
+/*
+@media screen and (min-width: 320px) {
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: .8rem;
+
+  .buttonContainer {
+    height: 1rem;
+    order: 2;
+  }
+
+  .medalContainer {
+    order: 3;
+  }
+}*/
