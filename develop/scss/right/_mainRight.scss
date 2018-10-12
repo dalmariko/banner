@@ -1,4 +1,12 @@
 .backgroundRight {
+
+  @media screen and (min-width: 320px) {
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 768px) {
+    //width: 0;
+  }
+
   @extend %displeyFlex;
   justify-content: center;
   align-items: center;
@@ -8,66 +16,82 @@
 
 }
 
-.infoText{
-  width: 47%;
-  margin-left: 50px;
+.flexInfo {
 
-  .queryText{
-    width: 100%;
-    b{
-      font-size: 1.1rem;
-      text-transform: uppercase;
-    }
-    color: #ffffff;
-  }
+  width: 70%;
 
-  .saleText{
-    width: 100%;
-    p{
-      font-size: 1rem;
-    }
-    color: #dd8e00;
-  }
-}
-
-.medalContainer{
-  width: 20%;
-  height: 72%;
-  margin-left: 44px;
-  margin-right: 48px;
-
-  .medal{
-    @extend %bg;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.button{
-  width: 30%;
-  margin-right: 20px;
   @extend %displeyFlex;
 
-  button{
-    border: none;
-    border-radius: 14px ;
-    width: 149px;
-    height: 31px;
-    background-color: #ffa400;
-  }
+  @media screen and (min-width: 320px) {
+    align-content: space-around;
+    flex-direction: column;
+    font-size: .8rem;
+    .buttonContainer {
+      height: 1rem;
+    }
 
-  b{
-    font-size: 13.5px;
-    color: black;
-  }
+    .infoContainer {
 
+      width: 100%;
+
+      .queryText {
+        b {
+          text-transform: uppercase;
+        }
+        color: #ffffff;
+      }
+      .saleText {
+        color: #dd8e00;
+      }
+    }
+
+    .medalContainer {
+
+      width: 20%;
+      height: 72%;
+
+      .medal {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .buttonContainer {
+
+      button {
+        border-radius: 1rem;
+        background-color: #ffa400;
+
+        b {
+          font-size: 0.6rem;
+          color: black;
+        }
+      }
+
+    }
+
+  }
 }
 
-.tireContainer{
+
+.medal{
+  @extend %bg;
+}
+
+.tireContainer {
+  @media screen and (min-width: 320px) {
+    width: 0;
+    height: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 0;
+    height: 0;
+  }
+
   width: 30%;
   height: 100%;
 
-  .tire{
+  .tire {
     @extend %bg;
     background-size: cover;
     width: 100%;
@@ -75,38 +99,43 @@
   }
 }
 
+.empty {
 
+  @media screen and (min-width: 320px) {
+    width: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 0;
+  }
 
-.empty{
   width: 67%;
+
 }
 
-.exitButton{
-  width: 3%;
-  margin-top: 10px;
-  margin-right: 10px;
+.exitButton {
+
+  width: 17px;
+  height: 17px;
+
+  margin-top: .9em;
+  margin-right: .9em;
   @extend %displeyFlex;
   align-self: flex-start;
 
-  button{
+  button {
     @extend %displeyFlex;
     justify-content: center;
     align-self: center;
 
-    padding: 0 0 2px 0;
-    width: 17px;
-    height: 17px;
+    width: 100%;
+    height: 100%;
+
     border-radius: 50%;
-    border: none;
     background-color: #f19a1e;
 
-    font-size: 13px;
+    padding: 0 0 17px 0;
+    font-size: 14px;
     color: black;
-  }
-
-  button::-moz-focus-inner {
-    padding:0;
-    border:0;
   }
 
 }
