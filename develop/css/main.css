@@ -314,8 +314,8 @@ width: 40%;
       padding-top: 6em; }
     @media screen and (max-width: 320px) {
       .flexInfo .medalContainer {
-        width: 40%;
-        font-size: .65rem;
+        width: 30%;
+        font-size: .5rem;
         -webkit-box-ordinal-group: 4;
         -webkit-order: 3;
            -moz-box-ordinal-group: 4;
@@ -334,10 +334,10 @@ width: 40%;
               border-radius: 1em;
       background-color: #ffa400;
       line-height: 1.2;
-      padding: .30em 1em; }
+      padding: .30em 1rem; }
       @media screen and (max-width: 320px) {
         .flexInfo .buttonContainer a {
-          padding: .3em .25rem;
+          padding: .23em .9rem;
           font-size: 1em;
           -webkit-box-ordinal-group: 3;
           -webkit-order: 2;
@@ -345,7 +345,7 @@ width: 40%;
               -ms-flex-order: 2;
                   order: 2; } }
       .flexInfo .buttonContainer a b {
-        font-size: 1.25em;
+        font-size: .95em;
         font-weight: 500;
         color: black; }
       .flexInfo .buttonContainer a:hover {
@@ -363,6 +363,8 @@ width: 40%;
                 order: 2; } }
   @media screen and (max-width: 320px) {
     .flexInfo {
+      margin-bottom: 1.2rem;
+      margin-top: 1.2rem;
       width: 85%;
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
@@ -376,9 +378,11 @@ width: 40%;
          -moz-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      -webkit-align-content: center;
-          -ms-flex-line-pack: center;
-              align-content: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+         -moz-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; } }
@@ -415,14 +419,13 @@ width: 40%;
   }*/ }
   @media screen and (max-width: 320px) {
     .empty {
-      width: 15%; } }
+      width: 0%; } }
 
 .exitButton {
   width: 3%;
   position: relative;
-  top: 1.6rem;
-  right: .9rem;
-  font-size: 1em;
+  top: 2.2em;
+  right: 2em;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
@@ -441,16 +444,19 @@ width: 40%;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
-    width: 1.2rem;
-    height: 1.2rem;
+    font-size: 1.5em;
+    color: black;
+    width: 1.1em;
+    height: 1.1em;
     line-height: 1.1;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #f19a1e;
-    font-size: 1rem;
-    color: black; }
+    background-color: #f19a1e; }
     .exitButton a:active {
       background-color: #f19a1e; }
     .exitButton a:hover {
       background-color: #f0991f;
       cursor: pointer; }
+  @media screen and (max-width: 320px) {
+    .exitButton {
+      font-size: .5rem; } }

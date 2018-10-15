@@ -78,8 +78,8 @@
     }
 
     @include mQ(320px){
-      width: 40%;
-      font-size: .65rem;
+      width: 30%;
+      font-size: .5rem;
       order: 3;
     }
   }
@@ -94,16 +94,16 @@
       border-radius: 1em;
       background-color: rgba(255, 164, 0, 1);
       line-height: 1.2;
-      padding: .30em 1em;
+      padding: .30em 1rem;
 
       @include mQ(320px){
-        padding: .3em .25rem;
+        padding: .23em .9rem;
         font-size: 1em;
         order: 2;
       }
 
       b {
-        font-size: 1.25em;
+        font-size: .95em;
         font-weight: 500;
         color: black;
       }
@@ -145,10 +145,12 @@
   */
 
   @include mQ(320px){
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
     width: 85%;
     flex-direction: column-reverse;
     align-items: flex-start;
-    align-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -205,7 +207,7 @@
   }*/
 
   @include mQ(320px){
-    width: 15%;
+    width: 0%;
   }
 
 }
@@ -214,10 +216,9 @@
 
 width: 3%;
   position: relative;
-  top: 1.6rem;
-  right: .9rem;
+  top: 2.2em;
+  right:2em;
 
-  font-size: 1em;
   @extend %displeyFlex;
   align-self: flex-start;
   justify-content: center;
@@ -228,15 +229,18 @@ width: 3%;
     justify-content: center;
     align-self: center;
 
-    width: 1.2rem;
-    height: 1.2rem;
+   font-size: 1.5em;
+   color: black;
+
+    width: 1.1em;
+    height: 1.1em;
+
    line-height: 1.1;
 
     border-radius: 50%;
     background-color: #f19a1e;
 
-    font-size: 1rem;
-    color: black;
+
 
    &:active {
      background-color: #f19a1e;
@@ -247,8 +251,11 @@ width: 3%;
      cursor: pointer;
    }
 
- }
 
+ }
+  @include mQ(320px){
+    font-size: .5rem;
+  }
 }
 
 
