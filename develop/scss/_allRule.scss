@@ -2,16 +2,14 @@
   box-sizing: border-box;
 }
 
-html,
-body,
-ul,
-ol {
+html, body, ul, ol {
   margin:  0;
   padding: 0;
 }
 
-button{
-  border: none;
+html,body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 a {
@@ -24,6 +22,7 @@ a:hover {
   color:#000;
 }
 
+
 :active, :hover, :focus {
   outline: none;
   box-shadow: none;
@@ -34,6 +33,7 @@ a:hover {
 %container {
   min-width: 320px;
   max-width: 1920px;
+  max-height: 120px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -60,11 +60,6 @@ a:hover {
   @media screen and (max-width: $arg){
       @content;
   }
-}
-
-.banner {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
 }
 
 .backgrounds {
