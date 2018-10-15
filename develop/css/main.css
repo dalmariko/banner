@@ -35,7 +35,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto; }
 
-.backgrounds, .bakgrounLeft, .logoContainer, .backgroundRight, .flexInfo, .exitButton, .exitButton button {
+.backgrounds, .bakgrounLeft, .logoContainer, .backgroundRight, .flexInfo, .flexInfo .buttonContainer button, .exitButton, .exitButton button {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -226,11 +226,6 @@ width: 40%;
   width:0px;
 }*/
 .backgroundRight {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 60%;
   background-color: #000000;
   /*@include mQ(1715px){
@@ -264,12 +259,10 @@ width: 40%;
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  width: 40%; }
+  width: 55%; }
   .flexInfo .infoContainer {
-    width: 50%; }
+    width: 31%;
+    padding-left: 40px; }
     .flexInfo .infoContainer .queryText {
       width: 100%;
       color: #ffffff; }
@@ -280,20 +273,30 @@ width: 40%;
       font-size: .65rem;
       color: #dd8e00; }
   .flexInfo .medalContainer {
-    width: 30%; }
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px; }
     .flexInfo .medalContainer .medal {
       width: 100%;
       padding-top: 70px; }
   .flexInfo .buttonContainer {
-    width: 10%; }
+    width: 18%; }
     .flexInfo .buttonContainer button {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
       -webkit-border-radius: 1rem;
               border-radius: 1rem;
       background-color: #ffa400;
       width: 105px;
       height: 23px; }
       .flexInfo .buttonContainer button b {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
         color: black; }
 
 .tireContainer {
@@ -309,7 +312,7 @@ width: 40%;
       display: none; } }
 
 .empty {
-  width: 7%; }
+  width: 27%; }
   @media screen and (max-width: 769px) {
     .empty {
       display: none; } }
@@ -335,7 +338,6 @@ width: 40%;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     background-color: #f19a1e;
-    padding: 0 0 17px 0;
     font-size: 14px;
     color: black; }
 
