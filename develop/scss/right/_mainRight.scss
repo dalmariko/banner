@@ -1,6 +1,7 @@
 .backgroundRight {
 
   @extend %displeyFlex;
+  justify-content: space-between;
   width: 60%;
   @extend %bg;
   background-color: #000000;
@@ -38,10 +39,11 @@
   width: 50%;
 
   .infoContainer {
-    width: 35%;
-    padding-left: 60px;
+    width: 41%;
+    padding-left: 4.3em;
     .queryText {
       width: 100%;
+      font-size: 1.1em;
       b {
         text-transform: uppercase;
       }
@@ -49,7 +51,7 @@
     }
     .saleText {
       width: 80%;
-      font-size: .65rem;
+      font-size: 1em;
       color: #dd8e00;
     }
   }
@@ -60,22 +62,23 @@
     .medal {
       @extend %bg;
       width: 100%;
-      padding-top: 70px;
+      padding-top: 5em;
     }
+
   }
 
   .buttonContainer {
-    width: 19%;
+    width: 28%;
     button {
       @extend %displeyFlex;
       justify-content: center;
       align-self: center;
-      border-radius: 1rem;
+      border-radius: 1em;
       background-color: #ffa400;
-      width: 105px;
+      width: 10.7em;
       height: 23px;
       b {
-        font-size: 0.65rem;
+        font-size: 1em;
         color: black;
       }
     }
@@ -96,6 +99,9 @@
     padding-top: 50%;
   }
 
+  @include mQ(1815px){
+
+  }
   @include mQ(1715px){
 
   }
@@ -106,19 +112,7 @@
 
   }
   @include mQ(1025px){
-
-  }
-  @include mQ(993px){
-
-  }
-  @include mQ(769px) {
-    display: none;
-  }
-  @include mQ(481px){
-
-  }
-  @include mQ(320px){
-
+    width: 0%;
   }
 }
 
@@ -126,6 +120,9 @@
 
   width: 27%;
 
+  @include mQ(1815px){
+
+  }
   @include mQ(1715px){
 
   }
@@ -136,19 +133,7 @@
 
   }
   @include mQ(1025px){
-
-  }
-  @include mQ(993px){
-
-  }
-  @include mQ(769px) {
-display: none;
-  }
-  @include mQ(481px){
-
-  }
-  @include mQ(320px){
-
+    width: 0%;
   }
 
 }

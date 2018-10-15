@@ -31,7 +31,6 @@ a:hover {
 .backgrounds {
   min-width: 320px;
   max-width: 1920px;
-  min-height: 120px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -109,16 +108,7 @@ a:hover {
         width: 5%; } }
     @media screen and (max-width: 993px) {
       .logoContainer .topLeft {
-        width: 0px; } }
-    @media screen and (max-width: 769px) {
-      .logoContainer .topLeft {
-        width: 0px; } }
-    @media screen and (max-width: 481px) {
-      .logoContainer .topLeft {
-        width: 0px; } }
-    @media screen and (max-width: 320px) {
-      .logoContainer .topLeft {
-        width: 0px; } }
+        width: 0%; } }
   .logoContainer .logo {
     background-image: url("../logo.png");
     width: 40%;
@@ -226,6 +216,11 @@ width: 40%;
   width:0px;
 }*/
 .backgroundRight {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 60%;
   background-color: #000000;
   /*@include mQ(1715px){
@@ -266,24 +261,25 @@ width: 40%;
           justify-content: space-between;
   width: 50%; }
   .flexInfo .infoContainer {
-    width: 35%;
-    padding-left: 60px; }
+    width: 41%;
+    padding-left: 4.3em; }
     .flexInfo .infoContainer .queryText {
       width: 100%;
+      font-size: 1.1em;
       color: #ffffff; }
       .flexInfo .infoContainer .queryText b {
         text-transform: uppercase; }
     .flexInfo .infoContainer .saleText {
       width: 80%;
-      font-size: .65rem;
+      font-size: 1em;
       color: #dd8e00; }
   .flexInfo .medalContainer {
     width: 12%; }
     .flexInfo .medalContainer .medal {
       width: 100%;
-      padding-top: 70px; }
+      padding-top: 5em; }
   .flexInfo .buttonContainer {
-    width: 19%; }
+    width: 28%; }
     .flexInfo .buttonContainer button {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -293,13 +289,13 @@ width: 40%;
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center;
-      -webkit-border-radius: 1rem;
-              border-radius: 1rem;
+      -webkit-border-radius: 1em;
+              border-radius: 1em;
       background-color: #ffa400;
-      width: 105px;
+      width: 10.7em;
       height: 23px; }
       .flexInfo .buttonContainer button b {
-        font-size: 0.65rem;
+        font-size: 1em;
         color: black; }
 
 .tireContainer {
@@ -311,15 +307,15 @@ width: 40%;
     background-position: bottom center;
     width: 70%;
     padding-top: 50%; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 1025px) {
     .tireContainer {
-      display: none; } }
+      width: 0%; } }
 
 .empty {
   width: 27%; }
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 1025px) {
     .empty {
-      display: none; } }
+      width: 0%; } }
 
 .exitButton {
   width: 3%;

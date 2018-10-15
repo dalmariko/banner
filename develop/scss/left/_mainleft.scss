@@ -33,17 +33,9 @@
       width:5%;
     }
     @include mQ(993px){
-      width:0px;
+      width:0%;
     }
-    @include mQ(769px) {
-      width: 0px;
-    }
-    @include mQ(481px){
-      width:0px;
-    }
-    @include mQ(320px){
-      width:0px;
-    }
+
   }
 
   .logo{
