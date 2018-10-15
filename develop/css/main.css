@@ -327,7 +327,12 @@ width: 40%;
   margin-right: .9em;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
-          align-self: flex-start; }
+          align-self: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .exitButton button {
     -webkit-box-pack: center;
     -webkit-justify-content: center;

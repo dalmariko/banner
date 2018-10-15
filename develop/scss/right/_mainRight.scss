@@ -161,6 +161,7 @@ width: 3%;
   margin-right: .9em;
   @extend %displeyFlex;
   align-self: flex-start;
+  justify-content: center;
 
   button {
     @extend %displeyFlex;
