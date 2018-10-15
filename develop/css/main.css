@@ -259,10 +259,15 @@ width: 40%;
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 55%; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%; }
   .flexInfo .infoContainer {
-    width: 31%;
-    padding-left: 40px; }
+    width: 35%;
+    padding-left: 60px; }
     .flexInfo .infoContainer .queryText {
       width: 100%;
       color: #ffffff; }
@@ -273,14 +278,12 @@ width: 40%;
       font-size: .65rem;
       color: #dd8e00; }
   .flexInfo .medalContainer {
-    width: 20%;
-    padding-left: 10px;
-    padding-right: 10px; }
+    width: 12%; }
     .flexInfo .medalContainer .medal {
       width: 100%;
       padding-top: 70px; }
   .flexInfo .buttonContainer {
-    width: 18%; }
+    width: 19%; }
     .flexInfo .buttonContainer button {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -305,7 +308,8 @@ width: 40%;
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
-    width: 100%;
+    background-position: bottom center;
+    width: 70%;
     padding-top: 50%; }
   @media screen and (max-width: 769px) {
     .tireContainer {

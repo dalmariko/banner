@@ -34,11 +34,12 @@
 .flexInfo {
   @extend %displeyFlex;
   align-items: center;
-  width: 55%;
+  justify-content: space-between;
+  width: 50%;
 
   .infoContainer {
-    width: 31%;
-    padding-left: 40px;
+    width: 35%;
+    padding-left: 60px;
     .queryText {
       width: 100%;
       b {
@@ -54,9 +55,7 @@
   }
 
   .medalContainer {
-    width: 20%;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 12%;
 
     .medal {
       @extend %bg;
@@ -66,7 +65,7 @@
   }
 
   .buttonContainer {
-    width: 18%;
+    width: 19%;
     button {
       @extend %displeyFlex;
       justify-content: center;
@@ -92,7 +91,8 @@
   .tire {
     @extend %bg;
     background-size: cover;
-    width: 100%;
+    background-position:bottom center;
+    width: 70%;
     padding-top: 50%;
   }
 
