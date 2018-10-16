@@ -96,7 +96,8 @@
     a {
 
       border-radius: 1em;
-      background-color: rgba(255, 164, 0, 1);
+      background-color: #ffa51a;
+      border: .1em solid #ed921f;
       line-height: 1.2;
       padding: .30em 2.2rem;
 
@@ -113,11 +114,17 @@
       }
 
       &:hover {
+        background-color: #ea931a;
+        border: .1em solid #fca61f;
+        box-shadow: .1em .1em .13rem .12em #ed921f inset;
+        transition: background-color .2s linear;
         cursor: pointer;
       }
 
       &:active {
-        background-color: rgb(255, 164, 0);
+        box-shadow: .1em .1em .13rem .1em #3e3e3e inset;
+        transition: background-color .2s ease;
+        background-color: #f19a1e;
       }
 
     }
@@ -237,20 +244,27 @@
     width: 1.1em;
     height: 1.1em;
 
-   line-height: .95;
+   line-height: .8;
 
     border-radius: 50%;
-    background-color: #f19a1e;
+    background-color: #3e3e3e;
+   border: .1em solid #818181;
 
 
 
    &:active {
      background-color: #f19a1e;
+     box-shadow: 0 0 .1rem .12em #cc811b inset;
+     border: .1em solid #bf771b;
+     transition: background-color .2s ease;
    }
 
    &:hover {
-     background-color: #f0991f;
+     background-color: #ea931a;
+     box-shadow: .1em .1em .13rem .12em #fca61f inset;
+     border: .1em solid #ed921f;
      cursor: pointer;
+     transition: background-color .2s linear;
    }
 
 

@@ -321,7 +321,8 @@ width: 40%;
     .flexInfo .buttonContainer a {
       -webkit-border-radius: 1em;
               border-radius: 1em;
-      background-color: #ffa400;
+      background-color: #ffa51a;
+      border: .1em solid #ed921f;
       line-height: 1.2;
       padding: .30em 2.2rem; }
       @media screen and (max-width: 320px) {
@@ -338,9 +339,23 @@ width: 40%;
         font-weight: 500;
         color: black; }
       .flexInfo .buttonContainer a:hover {
+        background-color: #ea931a;
+        border: .1em solid #fca61f;
+        -webkit-box-shadow: .1em .1em .13rem .12em #ed921f inset;
+                box-shadow: .1em .1em .13rem .12em #ed921f inset;
+        -webkit-transition: background-color .2s linear;
+        -o-transition: background-color .2s linear;
+        -moz-transition: background-color .2s linear;
+        transition: background-color .2s linear;
         cursor: pointer; }
       .flexInfo .buttonContainer a:active {
-        background-color: #ffa400; }
+        -webkit-box-shadow: .1em .1em .13rem .1em #3e3e3e inset;
+                box-shadow: .1em .1em .13rem .1em #3e3e3e inset;
+        -webkit-transition: background-color .2s ease;
+        -o-transition: background-color .2s ease;
+        -moz-transition: background-color .2s ease;
+        transition: background-color .2s ease;
+        background-color: #f19a1e; }
     @media screen and (max-width: 320px) {
       .flexInfo .buttonContainer {
         width: 60%;
@@ -433,15 +448,30 @@ width: 40%;
     color: black;
     width: 1.1em;
     height: 1.1em;
-    line-height: .95;
+    line-height: .8;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background-color: #f19a1e; }
+    background-color: #3e3e3e;
+    border: .1em solid #818181; }
     .exitButton a:active {
-      background-color: #f19a1e; }
+      background-color: #f19a1e;
+      -webkit-box-shadow: 0 0 .1rem .12em #cc811b inset;
+              box-shadow: 0 0 .1rem .12em #cc811b inset;
+      border: .1em solid #bf771b;
+      -webkit-transition: background-color .2s ease;
+      -o-transition: background-color .2s ease;
+      -moz-transition: background-color .2s ease;
+      transition: background-color .2s ease; }
     .exitButton a:hover {
-      background-color: #f0991f;
-      cursor: pointer; }
+      background-color: #ea931a;
+      -webkit-box-shadow: .1em .1em .13rem .12em #fca61f inset;
+              box-shadow: .1em .1em .13rem .12em #fca61f inset;
+      border: .1em solid #ed921f;
+      cursor: pointer;
+      -webkit-transition: background-color .2s linear;
+      -o-transition: background-color .2s linear;
+      -moz-transition: background-color .2s linear;
+      transition: background-color .2s linear; }
   @media screen and (max-width: 320px) {
     .exitButton {
       font-size: .5rem; } }
