@@ -44,6 +44,7 @@
     width: 40%;
     position: absolute;
     padding-top: 57px;
+    z-index: 5;
     left: 300px;
     @include mQ(1715px){
       width:75%;
@@ -85,8 +86,20 @@
   .midleCar{
     @extend %bg;
     background-size: cover;
-    background-image: url("../car.png");
+    background-image: url("../car_gradient.png");
     width: 60%;
+
+    .gradient {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      background-size: cover;
+      background-image: radial-gradient(circle farthest-side at 0px, rgba(255, 255, 255, 0.56) 50%,rgba(255, 255, 255, 0));
+      @include mQ(320px){
+        width: 100%;
+      }
+    }
+
     @include mQ(1815px){
       width:70%;
     }
@@ -110,11 +123,11 @@
     }
     @include mQ(481px){
       width: 100%;
-      background-image: url("../car2.png");
+      background-image: url("../car2_gradient.png");
     }
     @include mQ(320px){
       width: 100%;
-      background-image: url("../car2.png");
+      background-image: url("../car2_gradient.png");
     }
   }
 }

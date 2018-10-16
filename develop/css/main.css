@@ -109,6 +109,7 @@ a:hover {
     width: 40%;
     position: absolute;
     padding-top: 57px;
+    z-index: 5;
     left: 300px; }
     @media screen and (max-width: 1715px) {
       .logoContainer .logo {
@@ -149,8 +150,22 @@ a:hover {
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
-    background-image: url("../car.png");
+    background-image: url("../car_gradient.png");
     width: 60%; }
+    .logoContainer .midleCar .gradient {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      -webkit-background-size: cover;
+           -o-background-size: cover;
+              background-size: cover;
+      background-image: -webkit-radial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.56) 50%, rgba(255, 255, 255, 0));
+      background-image: -moz- oldradial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.56) 50%, rgba(255, 255, 255, 0));
+      background-image: -o-radial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.56) 50%, rgba(255, 255, 255, 0));
+      background-image: radial-gradient(circle farthest-side at 0px, rgba(255, 255, 255, 0.56) 50%, rgba(255, 255, 255, 0)); }
+      @media screen and (max-width: 320px) {
+        .logoContainer .midleCar .gradient {
+          width: 100%; } }
     @media screen and (max-width: 1815px) {
       .logoContainer .midleCar {
         width: 70%; } }
@@ -175,11 +190,11 @@ a:hover {
     @media screen and (max-width: 481px) {
       .logoContainer .midleCar {
         width: 100%;
-        background-image: url("../car2.png"); } }
+        background-image: url("../car2_gradient.png"); } }
     @media screen and (max-width: 320px) {
       .logoContainer .midleCar {
         width: 100%;
-        background-image: url("../car2.png"); } }
+        background-image: url("../car2_gradient.png"); } }
 
 /*
 width: 40%;
