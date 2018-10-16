@@ -35,19 +35,18 @@
 .flexInfo {
   @extend %displeyFlex;
   align-items: center;
-  justify-content: space-between;
   width: 50%;
   font-size: 1em;
 
   .infoContainer {
-    width: 41%;
-    padding-left: 4.3em;
+    width: 40%;
+    padding-left: 3.3em;
     order:1;
 
 
     .queryText {
       width: 100%;
-      font-size: .98em;
+      font-size: 1.1em;
       font-weight: 800;
       b {
         text-transform: uppercase;
@@ -69,8 +68,10 @@
   }
 
   .medalContainer {
-    width: 12%;
+    width: 27%;
     order: 2;
+    padding-left: 2.2em;
+    padding-right: 2.2em;
     .medal {
       @extend %bg;
       width: 100%;
@@ -85,7 +86,7 @@
   }
 
   .buttonContainer {
-    width: 60%;
+    width: 30%;
     order: 3;
     font-size: 1.1em;
 
@@ -94,7 +95,7 @@
       border-radius: 1em;
       background-color: rgba(255, 164, 0, 1);
       line-height: 1.2;
-      padding: .30em 1rem;
+      padding: .30em 2.2rem;
 
       @include mQ(320px){
         padding: .23em .9rem;
@@ -188,7 +189,7 @@
 
 .empty {
 
-  width: 27%;
+  width: 30%;
 
 /*  @include mQ(1815px){
 
@@ -214,17 +215,19 @@
 
 .exitButton {
 
+
+  //TODO DO exit button
 width: 3%;
-  position: relative;
-  top: 2.2em;
-  right:2em;
+
+  padding-top: 2.2em;
+  padding-right:2em;
 
   @extend %displeyFlex;
   align-self: flex-start;
   justify-content: center;
 
  a {
-   position: absolute;
+   //position: absolute;
     @extend %displeyFlex;
     justify-content: center;
     align-self: center;
@@ -235,7 +238,7 @@ width: 3%;
     width: 1.1em;
     height: 1.1em;
 
-   line-height: 1.1;
+   line-height: .95;
 
     border-radius: 50%;
     background-color: #f19a1e;

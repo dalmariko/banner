@@ -40,7 +40,7 @@
 
   .logo{
     @extend %bg;
-    background-image: url("../logo.png");
+
     width: 40%;
     position: absolute;
     padding-top: 57px;
@@ -86,7 +86,7 @@
   .midleCar{
     @extend %bg;
     background-size: cover;
-    background-image: url("../car_gradient.png");
+    background-position: 0 75%;
     width: 60%;
 
     .gradient {
@@ -101,34 +101,8 @@
       }
     }
 
-    @include mQ(1815px){
-      width:70%;
-    }
-    @include mQ(1715px){
-      width:75%;
-    }
-    @include mQ(1615px){
-      width:80%;
-    }
-    @include mQ(1281px){
-      width:85%;
-    }
-    @include mQ(1025px){
-      width:95%;
-    }
-    @include mQ(993px){
-      width:100%;
-    }
-    @include mQ(769px){
-      width:100%;
-    }
-    @include mQ(481px){
-      width: 100%;
-      background-image: url("../car2_gradient.png");
-    }
     @include mQ(320px){
       width: 100%;
-      background-image: url("../car2_gradient.png");
     }
   }
 }
