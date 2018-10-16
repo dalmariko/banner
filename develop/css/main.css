@@ -143,7 +143,7 @@ a:hover {
     @media screen and (max-width: 320px) {
       .logoContainer .logo {
         width: 55%;
-        left: 55px;
+        left: 30px;
         padding-top: 28px; } }
   .logoContainer .midleCar {
     -webkit-background-size: cover;
@@ -206,31 +206,7 @@ width: 40%;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 60%;
-  background-color: #000000;
-  /*@include mQ(1715px){
-
-  }
-  @include mQ(1615px){
-
-  }
-  @include mQ(1281px){
-
-  }
-  @include mQ(1025px){
-
-  }
-  @include mQ(993px){
-
-  }
-  @include mQ(769px) {
-
-  }
-  @include mQ(481px){
-
-  }
-  @include mQ(320px){
-    justify-content: space-around;
-  }*/ }
+  background-color: #000000; }
 
 .flexInfo {
   -webkit-box-align: center;
@@ -239,7 +215,9 @@ width: 40%;
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  font-size: 1em; }
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
   .flexInfo .infoContainer {
     width: 40%;
     padding-left: 3.3em;
@@ -261,13 +239,30 @@ width: 40%;
       color: #dd8e00; }
     @media screen and (max-width: 1715px) {
       .flexInfo .infoContainer {
-        font-size: .85rem; } }
+        font-size: .9rem; } }
     @media screen and (max-width: 1615px) {
       .flexInfo .infoContainer {
         font-size: .8rem; } }
     @media screen and (max-width: 1281px) {
       .flexInfo .infoContainer {
-        font-size: .66rem; } }
+        width: 48%;
+        font-size: .8rem; } }
+    @media screen and (max-width: 1025px) {
+      .flexInfo .infoContainer {
+        width: 40%;
+        font-size: .8rem;
+        padding-left: .8rem; } }
+    @media screen and (max-width: 993px) {
+      .flexInfo .infoContainer {
+        font-size: .85rem; } }
+    @media screen and (max-width: 769px) {
+      .flexInfo .infoContainer {
+        font-size: .78rem; } }
+    @media screen and (max-width: 481px) {
+      .flexInfo .infoContainer {
+        width: 55%;
+        font-size: .69rem;
+        padding-left: .5rem; } }
     @media screen and (max-width: 320px) {
       .flexInfo .infoContainer {
         width: 65%;
@@ -299,6 +294,19 @@ width: 40%;
     @media screen and (max-width: 1281px) {
       .flexInfo .medalContainer {
         font-size: .7rem; } }
+    @media screen and (max-width: 1025px) {
+      .flexInfo .medalContainer {
+        font-size: .68rem; } }
+    @media screen and (max-width: 769px) {
+      .flexInfo .medalContainer {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+           -moz-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; } }
+    @media screen and (max-width: 481px) {
+      .flexInfo .medalContainer {
+        width: 45%; } }
     @media screen and (max-width: 320px) {
       .flexInfo .medalContainer {
         margin-top: 3.3rem;
@@ -326,6 +334,21 @@ width: 40%;
       border: .1em solid #ed921f;
       line-height: 1.2;
       padding: .30em 2.2rem; }
+      @media screen and (max-width: 1025px) {
+        .flexInfo .buttonContainer a {
+          padding: .4em 2rem; } }
+      @media screen and (max-width: 769px) {
+        .flexInfo .buttonContainer a {
+          padding: .4em 2rem; } }
+      @media screen and (max-width: 481px) {
+        .flexInfo .buttonContainer a {
+          padding: .23em .9rem;
+          font-size: 1em;
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+             -moz-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; } }
       @media screen and (max-width: 320px) {
         .flexInfo .buttonContainer a {
           padding: .23em .9rem;
@@ -366,6 +389,21 @@ width: 40%;
     @media screen and (max-width: 1281px) {
       .flexInfo .buttonContainer {
         font-size: .75rem; } }
+    @media screen and (max-width: 1025px) {
+      .flexInfo .buttonContainer {
+        font-size: .7rem; } }
+    @media screen and (max-width: 769px) {
+      .flexInfo .buttonContainer {
+        font-size: .65rem;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+           -moz-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; } }
+    @media screen and (max-width: 481px) {
+      .flexInfo .buttonContainer {
+        padding-left: .5rem;
+        width: 45%; } }
     @media screen and (max-width: 320px) {
       .flexInfo .buttonContainer {
         width: 60%;
@@ -376,6 +414,42 @@ width: 40%;
            -moz-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2; } }
+  @media screen and (max-width: 1025px) {
+    .flexInfo {
+      margin-top: 1.8em;
+      margin-bottom: 1.8em;
+      width: 70%; } }
+  @media screen and (max-width: 993px) {
+    .flexInfo {
+      width: 70%; } }
+  @media screen and (max-width: 769px) {
+    .flexInfo {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      width: 100%;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-align-content: center;
+          -ms-flex-line-pack: center;
+              align-content: center;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media screen and (max-width: 481px) {
+    .flexInfo {
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+         -moz-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
   @media screen and (max-width: 320px) {
     .flexInfo {
       margin-bottom: .8rem;
@@ -408,28 +482,22 @@ width: 40%;
             background-size: cover;
     background-position: bottom center;
     width: 70%;
-    padding-top: 50%; }
+    padding-top: 53%; }
+    @media screen and (max-width: 1715px) {
+      .tireContainer .tire {
+        padding-top: 60%; } }
   @media screen and (max-width: 1025px) {
     .tireContainer {
       width: 0%; } }
 
 .empty {
-  width: 30%;
-  /*  @include mQ(1815px){
-
-  }
-  @include mQ(1715px){
-
-  }
-  @include mQ(1615px){
-
-  }
-  @include mQ(1281px){
-
-  }
-  @include mQ(1025px){
-    width: 0%;
-  }*/ }
+  width: 30%; }
+  @media screen and (max-width: 1281px) {
+    .empty {
+      width: 15%; } }
+  @media screen and (max-width: 1025px) {
+    .empty {
+      width: 0%; } }
   @media screen and (max-width: 320px) {
     .empty {
       width: 0%; } }
