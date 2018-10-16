@@ -43,24 +43,27 @@
       font-size: .8rem;
     }
     @include mQ(1281px) {
-      width: 48%;
+      width: 43%;
       font-size: .8rem;
     }
     @include mQ(1025px) {
-      width: 40%;
+      width: 46%;
       font-size: .8rem;
       padding-left: .8rem;
     }
     @include mQ(993px) {
+      width: 49%;
       font-size: .85rem;
     }
     @include mQ(769px) {
+      width: 52%;
       font-size: .78rem;
     }
     @include mQ(481px) {
       width: 55%;
       font-size: .69rem;
       padding-left: .5rem;
+      order: 1;
     }
 
     @include mQ(320px) {
@@ -97,9 +100,11 @@
     @include mQ(993px) {
 
     }
-    @include mQ(769px) {  order: 3;  }
+    @include mQ(769px) {
+      order: 3;
+    }
     @include mQ(481px) {
-width: 45%;
+      width: 45%;
     }
 
     @include mQ(320px) {
@@ -113,7 +118,7 @@ width: 45%;
   }
 
   .buttonContainer {
-    width: 30%;
+    width: 33%;
     order: 3;
     font-size: 1.1em;
 
@@ -174,21 +179,25 @@ width: 45%;
       font-size: .8rem;
     }
     @include mQ(1281px) {
-      font-size: .75rem;
+      width: 45%;
+      font-size: .76rem;
     }
     @include mQ(1025px) {
+      width: 48%;
       font-size: .7rem;
     }
     @include mQ(993px) {
 
     }
     @include mQ(769px) {
+      width: 53%;
       font-size: .65rem;
       order: 2;
     }
     @include mQ(481px) {
+      width: 58%;
       padding-left: .5rem;
-      width: 45%;
+      order: 3;
     }
 
     @include mQ(320px) {
@@ -200,24 +209,42 @@ width: 45%;
 
   }
 
+  @include mQ(1715px) {
+    font-size: 2rem;
+  }
+
+  @include mQ(1615px) {
+    width: 65%;
+    font-size: 1.9rem;
+  }
+
+  @include mQ(1281px) {
+    width: 75%;
+    font-size: 1.7rem;
+  }
+
   @include mQ(1025px) {
-    margin-top: 1.8em;
-    margin-bottom: 1.8em;
-    width: 70%;
+    width: 75%;
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+    font-size: 1.6rem;
   }
 
   @include mQ(993px) {
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    font-size: 1.4rem;
     width: 70%;
   }
 
   @include mQ(769px) {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 100%;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
+    margin-top: .6em;
+    margin-bottom: .6em;
+    font-size: 1.2rem;
+    width: 76%;
     flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   @include mQ(481px) {
@@ -286,8 +313,8 @@ width: 45%;
 
 .exitButton {
 
-  padding-top: 2.2em;
-  padding-right: 2.2em;
+  padding-top: 1.2em;
+  padding-right: 1.2em;
 
   @extend %displeyFlex;
   align-self: flex-start;
@@ -326,6 +353,28 @@ width: 45%;
     }
 
   }
+  @include mQ(1715px) {
+    font-size: .9rem;
+  }
+  @include mQ(1615px) {
+    font-size: .8rem;
+  }
+  @include mQ(1281px) {
+    font-size: .75rem;
+  }
+  @include mQ(1025px) {
+    font-size: .7rem;
+  }
+  @include mQ(993px) {
+    font-size: .65rem;
+  }
+  @include mQ(769px) {
+    font-size: .60rem;
+  }
+  @include mQ(481px) {
+    font-size: .58rem;
+  }
+
   @include mQ(320px) {
     font-size: .5rem;
     line-height: .8;

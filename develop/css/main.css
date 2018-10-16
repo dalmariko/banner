@@ -86,9 +86,6 @@ a:hover {
   .logoContainer .topLeft {
     background-color: white;
     width: 40%; }
-    @media screen and (max-width: 1815px) {
-      .logoContainer .topLeft {
-        width: 30%; } }
     @media screen and (max-width: 1715px) {
       .logoContainer .topLeft {
         width: 25%; } }
@@ -129,12 +126,13 @@ a:hover {
     @media screen and (max-width: 993px) {
       .logoContainer .logo {
         width: 40%;
-        left: 90px; } }
+        left: 90px;
+        padding-top: 43px; } }
     @media screen and (max-width: 769px) {
       .logoContainer .logo {
         width: 50%;
         left: 85px;
-        padding-top: 43px; } }
+        padding-top: 42px; } }
     @media screen and (max-width: 481px) {
       .logoContainer .logo {
         width: 55%;
@@ -166,7 +164,19 @@ a:hover {
       @media screen and (max-width: 320px) {
         .logoContainer .midleCar .gradient {
           width: 100%; } }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 1715px) {
+      .logoContainer .midleCar {
+        width: 75%; } }
+    @media screen and (max-width: 1615px) {
+      .logoContainer .midleCar {
+        width: 80%; } }
+    @media screen and (max-width: 1281px) {
+      .logoContainer .midleCar {
+        width: 85%; } }
+    @media screen and (max-width: 1025px) {
+      .logoContainer .midleCar {
+        width: 85%; } }
+    @media screen and (max-width: 993px) {
       .logoContainer .midleCar {
         width: 100%; } }
 
@@ -245,24 +255,31 @@ width: 40%;
         font-size: .8rem; } }
     @media screen and (max-width: 1281px) {
       .flexInfo .infoContainer {
-        width: 48%;
+        width: 43%;
         font-size: .8rem; } }
     @media screen and (max-width: 1025px) {
       .flexInfo .infoContainer {
-        width: 40%;
+        width: 46%;
         font-size: .8rem;
         padding-left: .8rem; } }
     @media screen and (max-width: 993px) {
       .flexInfo .infoContainer {
+        width: 49%;
         font-size: .85rem; } }
     @media screen and (max-width: 769px) {
       .flexInfo .infoContainer {
+        width: 52%;
         font-size: .78rem; } }
     @media screen and (max-width: 481px) {
       .flexInfo .infoContainer {
         width: 55%;
         font-size: .69rem;
-        padding-left: .5rem; } }
+        padding-left: .5rem;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+           -moz-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; } }
     @media screen and (max-width: 320px) {
       .flexInfo .infoContainer {
         width: 65%;
@@ -320,7 +337,7 @@ width: 40%;
             -ms-flex-order: 3;
                 order: 3; } }
   .flexInfo .buttonContainer {
-    width: 30%;
+    width: 33%;
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
        -moz-box-ordinal-group: 4;
@@ -388,12 +405,15 @@ width: 40%;
         font-size: .8rem; } }
     @media screen and (max-width: 1281px) {
       .flexInfo .buttonContainer {
-        font-size: .75rem; } }
+        width: 45%;
+        font-size: .76rem; } }
     @media screen and (max-width: 1025px) {
       .flexInfo .buttonContainer {
+        width: 48%;
         font-size: .7rem; } }
     @media screen and (max-width: 769px) {
       .flexInfo .buttonContainer {
+        width: 53%;
         font-size: .65rem;
         -webkit-box-ordinal-group: 3;
         -webkit-order: 2;
@@ -402,8 +422,13 @@ width: 40%;
                 order: 2; } }
     @media screen and (max-width: 481px) {
       .flexInfo .buttonContainer {
+        width: 58%;
         padding-left: .5rem;
-        width: 45%; } }
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+           -moz-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; } }
     @media screen and (max-width: 320px) {
       .flexInfo .buttonContainer {
         width: 60%;
@@ -414,35 +439,48 @@ width: 40%;
            -moz-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2; } }
+  @media screen and (max-width: 1715px) {
+    .flexInfo {
+      font-size: 2rem; } }
+  @media screen and (max-width: 1615px) {
+    .flexInfo {
+      width: 65%;
+      font-size: 1.9rem; } }
+  @media screen and (max-width: 1281px) {
+    .flexInfo {
+      width: 75%;
+      font-size: 1.7rem; } }
   @media screen and (max-width: 1025px) {
     .flexInfo {
-      margin-top: 1.8em;
-      margin-bottom: 1.8em;
-      width: 70%; } }
+      width: 75%;
+      margin-top: 1.6em;
+      margin-bottom: 1.6em;
+      font-size: 1.6rem; } }
   @media screen and (max-width: 993px) {
     .flexInfo {
+      margin-top: 1.4em;
+      margin-bottom: 1.4em;
+      font-size: 1.4rem;
       width: 70%; } }
   @media screen and (max-width: 769px) {
     .flexInfo {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      width: 100%;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      -webkit-align-content: center;
-          -ms-flex-line-pack: center;
-              align-content: center;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
+      margin-top: .6em;
+      margin-bottom: .6em;
+      font-size: 1.2rem;
+      width: 76%;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
          -moz-box-orient: vertical;
          -moz-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
   @media screen and (max-width: 481px) {
     .flexInfo {
       -webkit-box-align: start;
@@ -503,8 +541,8 @@ width: 40%;
       width: 0%; } }
 
 .exitButton {
-  padding-top: 2.2em;
-  padding-right: 2.2em;
+  padding-top: 1.2em;
+  padding-right: 1.2em;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
@@ -550,6 +588,27 @@ width: 40%;
       -o-transition: background-color .2s linear;
       -moz-transition: background-color .2s linear;
       transition: background-color .2s linear; }
+  @media screen and (max-width: 1715px) {
+    .exitButton {
+      font-size: .9rem; } }
+  @media screen and (max-width: 1615px) {
+    .exitButton {
+      font-size: .8rem; } }
+  @media screen and (max-width: 1281px) {
+    .exitButton {
+      font-size: .75rem; } }
+  @media screen and (max-width: 1025px) {
+    .exitButton {
+      font-size: .7rem; } }
+  @media screen and (max-width: 993px) {
+    .exitButton {
+      font-size: .65rem; } }
+  @media screen and (max-width: 769px) {
+    .exitButton {
+      font-size: .60rem; } }
+  @media screen and (max-width: 481px) {
+    .exitButton {
+      font-size: .58rem; } }
   @media screen and (max-width: 320px) {
     .exitButton {
       font-size: .5rem;

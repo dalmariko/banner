@@ -17,9 +17,7 @@
     @extend %bg;
     background-color: white;
     width: 40%;
-    @include mQ(1815px){
-      width:30%;
-    }
+
     @include mQ(1715px){
       width:25%;
     }
@@ -65,11 +63,12 @@
     @include mQ(993px){
       width: 40%;
       left: 90px;
+      padding-top: 43px;
     }
     @include mQ(769px) {
       width: 50%;
       left: 85px;
-      padding-top: 43px;
+      padding-top: 42px;
     }
     @include mQ(481px){
       width: 55%;
@@ -101,7 +100,19 @@
       }
     }
 
-    @include mQ(320px){
+    @include mQ(1715px) {
+     width: 75%;
+    }
+    @include mQ(1615px) {
+      width: 80%;
+    }
+    @include mQ(1281px) {
+      width: 85%
+    }
+    @include mQ(1025px) {
+      width: 85%;
+    }
+    @include mQ(993px) {
       width: 100%;
     }
   }
