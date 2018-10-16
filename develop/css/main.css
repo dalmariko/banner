@@ -267,18 +267,18 @@ width: 40%;
             order: 1; }
     .flexInfo .infoContainer .queryText {
       width: 100%;
-      font-size: 1.1em;
+      font-size: 1.2em;
       font-weight: 800;
       color: #ffffff; }
       .flexInfo .infoContainer .queryText b {
         text-transform: uppercase; }
     .flexInfo .infoContainer .saleText {
       width: 100%;
-      font-size: .91em;
+      font-size: .98em;
       color: #dd8e00; }
     @media screen and (max-width: 320px) {
       .flexInfo .infoContainer {
-        width: 60%;
+        width: 65%;
         padding-left: .5rem;
         font-size: .65rem;
         -webkit-box-ordinal-group: 4;
@@ -410,9 +410,8 @@ width: 40%;
       width: 0%; } }
 
 .exitButton {
-  width: 3%;
   padding-top: 2.2em;
-  padding-right: 2em;
+  padding-right: 2.2em;
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
