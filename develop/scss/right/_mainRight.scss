@@ -59,6 +59,28 @@
       color: #dd8e00;
     }
 
+    @include mQ(1715px){
+      font-size: .85rem;
+    }
+    @include mQ(1615px){
+      font-size: .8rem;
+    }
+    @include mQ(1281px){
+      font-size: .66rem;
+    }
+    @include mQ(1025px){
+
+    }
+    @include mQ(993px){
+
+    }
+    @include mQ(769px) {
+
+    }
+    @include mQ(481px){
+
+    }
+
     @include mQ(320px){
       width: 65%;
       padding-left: .5rem;
@@ -78,10 +100,32 @@
       padding-top: 6em;
     }
 
+    @include mQ(1715px){
+      font-size:  .9rem;
+    }
+    @include mQ(1615px){
+      font-size: .8rem;
+    }
+    @include mQ(1281px){
+      font-size: .7rem;
+    }
+    @include mQ(1025px){
+
+    }
+    @include mQ(993px){
+
+    }
+    @include mQ(769px) {
+
+    }
+    @include mQ(481px){
+
+    }
+
     @include mQ(320px){
       margin-top:3.3rem;
-      padding-left: .1em;
-      padding-right: .1em;
+      padding-left: .1rem;
+      padding-right: .1rem;
       width: 33%;
       font-size: .5rem;
       order: 3;
@@ -129,6 +173,28 @@
 
     }
 
+    @include mQ(1715px){
+      font-size:  .9rem;
+    }
+    @include mQ(1615px){
+      font-size: .8rem;
+    }
+    @include mQ(1281px){
+      font-size: .75rem;
+    }
+    @include mQ(1025px){
+
+    }
+    @include mQ(993px){
+
+    }
+    @include mQ(769px) {
+
+    }
+    @include mQ(481px){
+
+    }
+
     @include mQ(320px) {
       width: 60%;
       padding-left: .5rem;
@@ -138,23 +204,7 @@
 
   }
 
-/*
-  @include mQ(1715px){
 
-  }
-  @include mQ(1615px){
-  }
-  @include mQ(1281px){
-  }
-  @include mQ(1025px){
-  }
-  @include mQ(993px){
-  }
-  @include mQ(769px) {
-  }
-  @include mQ(481px){
-  }
-  */
 
   @include mQ(320px){
     margin-bottom: .8rem;
@@ -244,7 +294,7 @@
     width: 1.1em;
     height: 1.1em;
 
-   line-height: .8;
+   line-height: .75;
 
     border-radius: 50%;
     background-color: #3e3e3e;
@@ -271,6 +321,7 @@
  }
   @include mQ(320px){
     font-size: .5rem;
+    line-height: .8;
   }
 }
 

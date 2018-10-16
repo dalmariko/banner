@@ -144,7 +144,7 @@ a:hover {
       .logoContainer .logo {
         width: 55%;
         left: 55px;
-        padding-top: 30px; } }
+        padding-top: 28px; } }
   .logoContainer .midleCar {
     -webkit-background-size: cover;
          -o-background-size: cover;
@@ -239,24 +239,7 @@ width: 40%;
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  font-size: 1em;
-  /*
-  @include mQ(1715px){
-
-  }
-  @include mQ(1615px){
-  }
-  @include mQ(1281px){
-  }
-  @include mQ(1025px){
-  }
-  @include mQ(993px){
-  }
-  @include mQ(769px) {
-  }
-  @include mQ(481px){
-  }
-  */ }
+  font-size: 1em; }
   .flexInfo .infoContainer {
     width: 40%;
     padding-left: 3.3em;
@@ -276,6 +259,15 @@ width: 40%;
       width: 100%;
       font-size: .98em;
       color: #dd8e00; }
+    @media screen and (max-width: 1715px) {
+      .flexInfo .infoContainer {
+        font-size: .85rem; } }
+    @media screen and (max-width: 1615px) {
+      .flexInfo .infoContainer {
+        font-size: .8rem; } }
+    @media screen and (max-width: 1281px) {
+      .flexInfo .infoContainer {
+        font-size: .66rem; } }
     @media screen and (max-width: 320px) {
       .flexInfo .infoContainer {
         width: 65%;
@@ -298,11 +290,20 @@ width: 40%;
     .flexInfo .medalContainer .medal {
       width: 100%;
       padding-top: 6em; }
+    @media screen and (max-width: 1715px) {
+      .flexInfo .medalContainer {
+        font-size: .9rem; } }
+    @media screen and (max-width: 1615px) {
+      .flexInfo .medalContainer {
+        font-size: .8rem; } }
+    @media screen and (max-width: 1281px) {
+      .flexInfo .medalContainer {
+        font-size: .7rem; } }
     @media screen and (max-width: 320px) {
       .flexInfo .medalContainer {
         margin-top: 3.3rem;
-        padding-left: .1em;
-        padding-right: .1em;
+        padding-left: .1rem;
+        padding-right: .1rem;
         width: 33%;
         font-size: .5rem;
         -webkit-box-ordinal-group: 4;
@@ -356,6 +357,15 @@ width: 40%;
         -moz-transition: background-color .2s ease;
         transition: background-color .2s ease;
         background-color: #f19a1e; }
+    @media screen and (max-width: 1715px) {
+      .flexInfo .buttonContainer {
+        font-size: .9rem; } }
+    @media screen and (max-width: 1615px) {
+      .flexInfo .buttonContainer {
+        font-size: .8rem; } }
+    @media screen and (max-width: 1281px) {
+      .flexInfo .buttonContainer {
+        font-size: .75rem; } }
     @media screen and (max-width: 320px) {
       .flexInfo .buttonContainer {
         width: 60%;
@@ -448,7 +458,7 @@ width: 40%;
     color: black;
     width: 1.1em;
     height: 1.1em;
-    line-height: .8;
+    line-height: .75;
     -webkit-border-radius: 50%;
             border-radius: 50%;
     background-color: #3e3e3e;
@@ -474,4 +484,5 @@ width: 40%;
       transition: background-color .2s linear; }
   @media screen and (max-width: 320px) {
     .exitButton {
-      font-size: .5rem; } }
+      font-size: .5rem;
+      line-height: .8; } }
