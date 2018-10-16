@@ -160,10 +160,10 @@ a:hover {
       -webkit-background-size: cover;
            -o-background-size: cover;
               background-size: cover;
-      background-image: -webkit-radial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.76) 25%, rgba(255, 255, 255, 0));
-      background-image: -moz- oldradial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.76) 25%, rgba(255, 255, 255, 0));
-      background-image: -o-radial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.76) 25%, rgba(255, 255, 255, 0));
-      background-image: radial-gradient(circle farthest-side at 0px, rgba(255, 255, 255, 0.76) 25%, rgba(255, 255, 255, 0)); }
+      background-image: -webkit-radial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0));
+      background-image: -moz- oldradial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0));
+      background-image: -o-radial-gradient(0px, circle farthest-side, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0));
+      background-image: radial-gradient(circle farthest-side at 0px, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0)); }
       @media screen and (max-width: 320px) {
         .logoContainer .midleCar .gradient {
           width: 100%; } }
