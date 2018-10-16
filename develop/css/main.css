@@ -300,7 +300,10 @@ width: 40%;
       padding-top: 6em; }
     @media screen and (max-width: 320px) {
       .flexInfo .medalContainer {
-        width: 30%;
+        margin-top: 3.3rem;
+        padding-left: .1em;
+        padding-right: .1em;
+        width: 33%;
         font-size: .5rem;
         -webkit-box-ordinal-group: 4;
         -webkit-order: 3;
@@ -340,6 +343,7 @@ width: 40%;
         background-color: #ffa400; }
     @media screen and (max-width: 320px) {
       .flexInfo .buttonContainer {
+        width: 60%;
         padding-left: .5rem;
         font-size: .65rem;
         -webkit-box-ordinal-group: 3;
@@ -349,8 +353,8 @@ width: 40%;
                 order: 2; } }
   @media screen and (max-width: 320px) {
     .flexInfo {
-      margin-bottom: 1.2rem;
-      margin-top: 1.2rem;
+      margin-bottom: .8rem;
+      margin-top: .8rem;
       width: 85%;
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
@@ -364,11 +368,9 @@ width: 40%;
          -moz-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-         -moz-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; } }

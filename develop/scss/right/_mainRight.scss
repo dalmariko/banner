@@ -79,7 +79,10 @@
     }
 
     @include mQ(320px){
-      width: 30%;
+      margin-top:3.3rem;
+      padding-left: .1em;
+      padding-right: .1em;
+      width: 33%;
       font-size: .5rem;
       order: 3;
     }
@@ -120,6 +123,7 @@
     }
 
     @include mQ(320px) {
+      width: 60%;
       padding-left: .5rem;
       font-size: .65rem;
       order: 2;
@@ -146,12 +150,12 @@
   */
 
   @include mQ(320px){
-    margin-bottom: 1.2rem;
-    margin-top: 1.2rem;
+    margin-bottom: .8rem;
+    margin-top: .8rem;
     width: 85%;
     flex-direction: column-reverse;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
