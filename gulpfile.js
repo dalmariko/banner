@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
     return gulp.src('develop/scss/**/*.scss')
         .pipe(sass())
-        .pipe(autoprefixer(['last 50 versions', '> 1%', 'ie 8', 'ie 7']))
+        .pipe(autoprefixer(['last 30 versions', '> 1%', 'ie 8', 'ie 7']))
         .pipe(gulp.dest('develop/css'))
         .pipe(bro.reload({stream: true}));
 });
@@ -22,7 +22,7 @@ gulp.task('cssMinify', ['sass'], function () {
     return gulp.src('develop/css/**/*.css')
         .pipe(cssnano({
             autoprefixer: {
-                browsers: ['last 50 versions', '> 1%', 'ie 8', 'ie 7'],
+                browsers: ['last 30 versions', '> 1%', 'ie 8', 'ie 7'],
                 cascade: true,
                 add: true
             }
