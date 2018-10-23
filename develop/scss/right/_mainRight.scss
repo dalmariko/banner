@@ -1,6 +1,7 @@
 .backgroundRight {
 
   @extend %displeyFlex;
+  align-items: center;
   justify-content: space-between;
   width: 60%;
   @extend %bg;
@@ -13,8 +14,8 @@
   align-items: center;
   width: 50%;
   font-size: 1em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  //margin-top: 1.5em;
+  //margin-bottom: 1.5em;
 
   .infoContainer {
     width: 40%;
@@ -269,9 +270,8 @@
   .tire {
     @extend %bg;
     background-size: cover;
-    background-position: bottom center;
-    width: 70%;
-    padding-top: 53%;
+    background-position: center;
+    width: 80%;
 
     @include mQ(1715px) {
       padding-top: 60%;
