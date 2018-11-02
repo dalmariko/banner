@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-<div class="banner">
+<div class="banner" onclick="return ar_callLink( {target: '_blank'} );">
     <div class="backgrounds">
 
         <div class="bakgrounLeft">
@@ -29,37 +29,25 @@
 
         <div class="backgroundRight">
 
-<div class="flexInfo">
+                <div class="infoContainer">
 
-    <div class="infoContainer">
+                    <div class="queryText">
+                        <b>Ти вже придбав</b>
+                        <b>зимові шини?</b>
+                    </div>
+                    <div class="saleText">
+                        <p>Вибір споживачів</p>
+                    </div>
 
-        <div class="queryText">
-            <b>Ти вже придбав</b>
-            <b>зимові шини?</b>
-        </div>
-        <div class="saleText">
-            <p>Вибір споживачів</p>
-        </div>
+                </div>
 
-    </div>
+                <div class="buttonContainer">
+                    <a href="#" onclick="return ar_callLink( {target: '_blank'} );"><b>Купи вчасно</b></a>
+                </div>
 
-    <div class="medalContainer ">
-        <div class="medal" style="background-image: url('medal.png')"></div>
-    </div>
-
-    <div class="buttonContainer">
-        <a href="#"><b>Купи вчасно</b></a>
-    </div>
-
-</div>
-
-
-            <div class="tireContainer">
-                <div class="tire" style="background-image: url('tire.png')"></div>
-            </div>
-
-
-            <div class="empty"></div>
+                <div class="medalContainer ">
+                    <div class="medal" style="background-image: url('medal.png')"></div>
+                </div>
 
             <div class="exitButton">
                 <a href="#">x</a>
@@ -73,20 +61,13 @@
 <script src="/html.js"></script>
 <script src="script.js"></script>
 <script>
-    document.querySelector('.exitButton a').addEventListener('click',function(e){
+    document.querySelector('.exitButton a').addEventListener('click', function (e) {
         if (e.target.closest('.exitButton a')) {
             document.querySelector('.backgrounds').style.display = 'none';
             parent.postMessage('hideSG', '*');
             e.stopPropagation();
         }
     });
-
-    document.querySelector('.banner').addEventListener('click',function(e){
-        document.location.href = "http://ukr.net";
-        });
-
-
-
 </script>
 
 </body>
