@@ -1,42 +1,41 @@
-.bakgrounLeft {
+/*.bakgrounLeft {
   @extend %displeyFlex;
   flex-direction: row;
   justify-content: center;
   width: 40%;
 }
 
-
-.logoContainer{
+.logoContainer {
   width: 100%;
   position: relative;
 
   @extend %displeyFlex;
   justify-content: flex-end;
 
-  .topLeft{
+  .topLeft {
     @extend %bg;
     background-color: white;
     width: 40%;
 
-    @include mQ(1715px){
-      width:25%;
+    @include mQ(1715px) {
+      width: 25%;
     }
-    @include mQ(1615px){
-      width:20%;
+    @include mQ(1615px) {
+      width: 20%;
     }
-    @include mQ(1281px){
-      width:15%;
+    @include mQ(1281px) {
+      width: 15%;
     }
-    @include mQ(1025px){
-      width:5%;
+    @include mQ(1025px) {
+      width: 5%;
     }
-    @include mQ(993px){
-      width:0%;
+    @include mQ(993px) {
+      width: 0%;
     }
 
   }
 
-  .logo{
+  .logo {
     @extend %bg;
 
     width: 40%;
@@ -44,23 +43,23 @@
     padding-top: 57px;
     z-index: 5;
     left: 300px;
-    @include mQ(1715px){
-      width:75%;
+    @include mQ(1715px) {
+      width: 75%;
       left: 270px;
     }
-    @include mQ(1615px){
-      width:80%;
+    @include mQ(1615px) {
+      width: 80%;
       left: 200px;
     }
-    @include mQ(1281px){
-      width:40%;
+    @include mQ(1281px) {
+      width: 40%;
       left: 130px;
     }
-    @include mQ(1025px){
-      width:40%;
+    @include mQ(1025px) {
+      width: 40%;
       left: 100px;
     }
-    @include mQ(993px){
+    @include mQ(993px) {
       width: 40%;
       left: 90px;
       padding-top: 43px;
@@ -70,19 +69,19 @@
       left: 85px;
       padding-top: 42px;
     }
-    @include mQ(481px){
+    @include mQ(481px) {
       width: 55%;
       left: 55px;
       padding-top: 30px;
     }
-    @include mQ(320px){
+    @include mQ(320px) {
       width: 55%;
       left: 30px;
       padding-top: 28px;
     }
   }
 
-  .midleCar{
+  .midleCar {
     @extend %bg;
     background-size: cover;
     background-position: 0 75%;
@@ -94,14 +93,14 @@
       width: 55%;
       height: 100%;
       background-size: cover;
-      background-image: radial-gradient(circle farthest-side at 0px, rgba(255, 255, 255, 0.90) 25%,rgba(255, 255, 255, 0));
-      @include mQ(320px){
+      background-image: radial-gradient(circle farthest-side at 0px, rgba(255, 255, 255, 0.90) 25%, rgba(255, 255, 255, 0));
+      @include mQ(320px) {
         width: 100%;
       }
     }
 
     @include mQ(1715px) {
-     width: 75%;
+      width: 75%;
     }
     @include mQ(1615px) {
       width: 80%;
@@ -118,7 +117,7 @@
   }
 }
 
-/*
+!*
 width: 40%;
 @include mQ(1815px){
   width:30%;
@@ -146,5 +145,87 @@ width: 40%;
 }
 @include mQ(320px){
   width:0px;
-}*/
+}*!*/
+
+//--------------------------------------------------------------------------------------------------------------------
+//new part
+.carImg {
+  //@extend %displayInline;
+  //vertical-align: middle;
+  @extend %bg;
+  background-size: cover;
+  background-position: 50% 65%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.whiteSpace {
+  //@extend %displayInline;
+  //vertical-align: middle;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: radial-gradient(circle farthest-side at 0px, rgba(255, 255, 255, 0.90) 25%, rgba(255, 255, 255, 0));
+}
+
+.logoContinental{
+  @extend %bg;
+  background-size: contain;
+  width: 100%;
+  height: 40%;
+  position: relative;
+  right: -3rem;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

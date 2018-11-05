@@ -381,5 +381,104 @@
   }
 }
 
+//---------------------------------------------------------------------------------------------------------------------------------
+//new part
 
+.Myinfo{
+  padding-left:.5em;
+  position: absolute;
+  left: 0%;
+  top:50%;
+  transform: translate(0%, -50%);
+}
+
+.textSlogan {
+  font-size: .4em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  p {
+    margin: 0;
+    padding: 0;
+    &:first-of-type{
+      margin-bottom: .1rem;
+    }
+  }
+}
+
+.textSelect{
+  font-size: .3em;
+  p{
+    color: #ffa51a;
+  }
+}
+
+.btnBy{
+  width: 3em;
+  height: .6em;
+  border-radius: 1em;
+  background-color: #ffa51a;
+  border: .1em solid #ed921f;
+  position: relative;
+  p{
+    display: block;
+    width: 70%;
+    font-size: .30em;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+
+.Medal{
+  width: 2em;
+  position: absolute;
+  top: 1em;
+  left: 4em;
+  @extend %bg;
+  padding-top: 2em;
+}
+
+
+  .circles {
+    display: flex;
+    width: 1px;
+    top: .2em;
+    right: -8.5em;
+    position: relative;
+  }
+  .circle-with-text {
+    background-color: #3e3e3e;
+    border: .1em solid #818181;
+    &:active {
+      background-color: #f19a1e;
+      box-shadow: 0 0 .1rem .12em #cc811b inset;
+      border: .1em solid #bf771b;
+      transition: background-color .2s ease;
+    }
+    &:hover {
+      background-color: #ea931a;
+      box-shadow: .1em .1em .13rem .12em #fca61f inset;
+      border: .1em solid #ed921f;
+      cursor: pointer;
+      transition: background-color .2s linear;
+    }
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: .6em;
+    padding: .6em;
+    display: flex;
+    height: .6em;
+    width: .6em;
+    color: #fff;
+  }
+  .multi-line-text {
+    font-size: 20px;
+  }
 
