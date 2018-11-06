@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-<div class="banner">
+<div class="banner" onclick="return ar_callLink( {target: '_blank'} );">
     <div class="container">
 
         <div class="leftSide">
@@ -28,14 +28,26 @@
                     <p>зимові шини?</p>
                 </div>
                 <div class="textSelect"><p>Вибір споживачів</p></div>
-                <div class="btnBy"><p>Купи вчасно</p></div>
+                <div class="btnBy"><a href="" onclick="return ar_callLink( {target: '_blank'} );"><p>Купи вчасно</p></a></div>
             </div>
 
             <div class="Medal" style="background-image: url('img/medal.png')"></div>
-            <div class="circles"><div class="circle-with-text">X</div></div>
+            <div class="badge"><a href="">X</a></div>
         </div>
 
     </div>
 </div>
+<script src="/html.js"></script>
+<script src="script.js"></script>
+<script>
+    document.querySelector('.badge a').addEventListener('click', function (e) {
+        if (e.target.closest('.badge a')) {
+            document.querySelector('.banner').style.display = 'none';
+            parent.postMessage('hideSG', '*');
+            e.stopPropagation();
+        }
+    });
+</script>
+
 </body>
 </html>
